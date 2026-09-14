@@ -1,0 +1,11 @@
+model,effort,condition,n_traces,n_states_prohibition,n_board_called,n_states_prohibition_and_calls,n_states_prohibition_and_abstains,share_of_calls_that_state_prohibition,n_proh_call_with_deficit_language
+DeepSeek,high,absent,3240,65,0,0,65,,0
+DeepSeek,high,forbidden,32631,11572,57,55,11517,0.9649122807017544,48
+DeepSeek,high,hidden,32292,123,9091,111,12,0.012209877901220988,108
+DeepSeek,high,permitted,33587,635,21651,611,24,0.028220405523994272,584
+DeepSeek,off,absent,7,0,0,0,0,,0
+DeepSeek,off,forbidden,26855,5464,7333,5430,34,0.7404882040092732,892
+DeepSeek,off,hidden,38241,0,38136,0,0,0.0,0
+DeepSeek,off,permitted,40873,0,40792,0,0,0.0,0
+MiMo,off,forbidden,55203,10,7831,5,5,0.0006384880602732729,1
+MiMo,off,permitted,3872,0,2667,0,0,0.0,0

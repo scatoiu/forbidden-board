@@ -1,0 +1,11 @@
+sandbox,repair_dirs,games_declared,games_repaired,games_still_provider_error_aborted,repair_dir_complete
+B1-absent-high-ahead,B1-absent-high-ahead-repair,107,47,60,False
+B3-permitted-high-behind,B3-permitted-high-behind-repair,67,67,0,True
+B4-hidden-high-behind,B4-hidden-high-behind-repair,30,30,0,True
+B4-permitted-high-behind,B4-permitted-high-behind-repair,60,60,0,True
+B5-forbidden-high-behind,B5-forbidden-high-behind-repair,18,18,0,True
+B5-hidden-high-behind,B5-hidden-high-behind-repair,65,65,0,True
+B5-permitted-high-behind,B5-permitted-high-behind-repair,55,55,0,True
+B6-forbidden-high-behind,B6-forbidden-high-behind-repair,57,57,0,True
+B6-hidden-high-behind,B6-hidden-high-behind-repair,93,93,0,True
+B6-permitted-high-behind,B6-permitted-high-behind-repair,93,93,0,True

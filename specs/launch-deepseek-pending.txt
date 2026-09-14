@@ -1,0 +1,9 @@
+specs/sandboxes-v2/B6-permitted-off-ahead.yaml
+specs/sandboxes-v2/B6-permitted-off-behind.yaml
+specs/sandboxes-v2/B6-permitted-high-behind.yaml
+specs/sandboxes-v2/B6-forbidden-off-ahead.yaml
+specs/sandboxes-v2/B6-forbidden-off-behind.yaml
+specs/sandboxes-v2/B6-forbidden-high-behind.yaml
+specs/sandboxes-v2/B6-hidden-off-behind.yaml
+specs/sandboxes-v2/B6-hidden-high-behind.yaml
+specs/sandboxes-v2/X1-forbidden-off-behind-p4.yaml

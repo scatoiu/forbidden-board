@@ -1,0 +1,4 @@
+model,effort,n_strata,mean_diff_pp,n_positive,sign_flip_p
+DeepSeek,high,8,-16.558485127386234,0,0.0078125
+DeepSeek,off,24,5.2589434662930605,23,3.5762786865234375e-07
+MiMo,off,12,-0.14650168417824116,6,0.8681640625

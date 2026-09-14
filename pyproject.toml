@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coop"
+version = "0.1.0"
+description = "LLM Cooperation Tournament: Iterated Prisoner's Dilemma harness for behavioural profiling of LLMs"
+requires-python = ">=3.10"
+dependencies = [
+    "axelrod>=4.13",
+    "pandas>=2.0",
+    "pyarrow>=14",
+    "matplotlib>=3.8",
+    "PyYAML>=6.0",
+    "numpy>=1.26",
+    "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+openai = ["openai>=1.40"]
+all = ["anthropic>=0.40", "openai>=1.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+coop = "coop.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["coop*"]

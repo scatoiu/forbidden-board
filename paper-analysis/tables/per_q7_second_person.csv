@@ -1,0 +1,9 @@
+model,effort,condition,n_posts,share_second_person
+DeepSeek,high,forbidden,21,0.047619047619047616
+DeepSeek,high,hidden,3992,0.13026052104208416
+DeepSeek,high,permitted,9121,0.9266527793005153
+DeepSeek,off,forbidden,4020,0.0002487562189054726
+DeepSeek,off,hidden,9849,0.02873388161234643
+DeepSeek,off,permitted,10429,0.03662863170006712
+MiMo,off,forbidden,3887,0.4401852328273733
+MiMo,off,permitted,785,0.7490445859872611

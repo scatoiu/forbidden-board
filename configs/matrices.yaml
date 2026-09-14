@@ -1,0 +1,26 @@
+# Payoff matrices, R/S/T/P notation. Constraints: T > R > P > S, 2R > T+S.
+# Source of truth is coop.tournament.PAYOFF_MATRICES.
+
+default:
+  description: Axelrod default. Standard Prisoner's Dilemma payoffs.
+  R: 3   # both cooperate
+  S: 0   # sucker (you C, opp D)
+  T: 5   # temptation (you D, opp C)
+  P: 1   # both defect
+
+high_temptation:
+  description: |
+    T raised to 10. Deliberately breaks the iterated-PD 2R > T+S constraint
+    (alternating exploitation now beats mutual cooperation), as a stress test
+    for whether strategies hold their cooperation discipline.
+  R: 3
+  S: 0
+  T: 10
+  P: 1
+
+low_temptation:
+  description: T close to R. Exploitation barely pays.
+  R: 3
+  S: 0
+  T: 4
+  P: 1

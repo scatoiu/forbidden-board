@@ -1,0 +1,8 @@
+model,condition,contrast,assumption,tost_upper_p,tost_lower_p,tost_p,greater_than_10_p
+XiaomiMiMo/MiMo-V2.5-Pro,forbidden,B,independent symmetric location-shift differences; exploratory,0.015625,0.015625,0.015625,1.0
+deepseek-ai/DeepSeek-V4-Flash-0731,forbidden,A,independent symmetric location-shift differences; exploratory,0.015625,1.0,1.0,1.0
+deepseek-ai/DeepSeek-V4-Flash-0731,forbidden,B,independent symmetric location-shift differences; exploratory,0.640625,0.015625,0.640625,0.40625
+deepseek-ai/DeepSeek-V4-Flash-0731,hidden,A,independent symmetric location-shift differences; exploratory,0.015625,0.015625,0.015625,1.0
+deepseek-ai/DeepSeek-V4-Flash-0731,hidden,B,independent symmetric location-shift differences; exploratory,0.015625,0.015625,0.015625,1.0
+deepseek-ai/DeepSeek-V4-Flash-0731,permitted,A,independent symmetric location-shift differences; exploratory,0.015625,0.015625,0.015625,1.0
+deepseek-ai/DeepSeek-V4-Flash-0731,permitted,B,independent symmetric location-shift differences; exploratory,0.015625,0.015625,0.015625,1.0

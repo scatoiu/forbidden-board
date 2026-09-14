@@ -1,0 +1,13 @@
+dataset,sample,contrast,mean_diff,n_pos,k,p_signflip
+deficit_d30,all_games,r25-30 minus r1-24,0.051471048393472885,5,6,0.093375
+deficit_d30,reached_30_only,r25-30 minus r1-24,0.05211179649665606,5,6,0.093375
+deficit_d30,reached_30_only,round 30 minus rounds 1-29,0.06923849410017831,6,6,0.0321
+low_arm,all_games,r25-30 minus r1-24,-0.02933992865756127,2,6,0.312425
+low_arm,reached_30_only,r25-30 minus r1-24,-0.013766934545267298,3,6,0.46855
+low_arm,reached_30_only,round 30 minus rounds 1-29,-0.008258177650990925,2,6,0.8129
+prereg,all_games,r25-30 minus r1-24,-0.048159460126633184,14,69,5e-06
+prereg,reached_30_only,r25-30 minus r1-24,-0.034526135668065006,15,69,9.5e-05
+prereg,reached_30_only,round 30 minus rounds 1-29,-0.02869884129794072,21,69,0.00089
+replication,all_games,r25-30 minus r1-24,-0.007876280449621189,12,24,0.649005
+replication,reached_30_only,r25-30 minus r1-24,0.0027028010536242647,12,24,0.86346
+replication,reached_30_only,round 30 minus rounds 1-29,0.00390993370490594,13,24,0.80052

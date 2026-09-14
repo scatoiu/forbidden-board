@@ -1,0 +1,18 @@
+# Test fixture for orchestrate.py -- the runner rejects this config (exit 2), so
+# the orchestrator must retry once and then mark it failed.
+sandbox: orch-bad
+block: T1
+population:
+  llm:
+    mock:tft: 2
+  scripts:
+    TitForTat: 2
+  total_agents: 4
+channel: not-a-condition
+framing: F0
+paraphrase: p1
+reasoning_effort: "off"
+rounds_per_game: 5
+generations: 1
+seed: 31
+provider: mock

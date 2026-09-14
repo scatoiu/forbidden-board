@@ -1,0 +1,17 @@
+model,endpoint,quantity,value_pp
+XiaomiMiMo/MiMo-V2.5-Pro,attempted,B_off_difference,4.04589371980677
+XiaomiMiMo/MiMo-V2.5-Pro,attempted,off_ahead,86.89613526570048
+XiaomiMiMo/MiMo-V2.5-Pro,attempted,off_behind,90.94202898550725
+XiaomiMiMo/MiMo-V2.5-Pro,used_channel,B_off_difference,4.166666666666674
+XiaomiMiMo/MiMo-V2.5-Pro,used_channel,off_ahead,86.77536231884058
+XiaomiMiMo/MiMo-V2.5-Pro,used_channel,off_behind,90.94202898550725
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,B_off_difference,12.86231884057971
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,high_behind,3.3816425120772946
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,off_ahead,69.7463768115942
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,off_behind,82.6086956521739
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,off_pooled,76.17753623188406
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,B_off_difference,13.10386473429952
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,high_behind,3.3816425120772946
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,off_ahead,69.32367149758454
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,off_behind,82.42753623188406
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,off_pooled,75.8756038647343

@@ -1,0 +1,91 @@
+# calibration-effort -- gate before any paid block runs.
+#
+# Purpose: show that the provider's effort dial is a real intervention on one model
+# before we buy 96 sandboxes that rest on it (review-astra threat 5). 30 fixed decision
+# states, replayed at four effort levels with the SAME answer capacity. First contact
+# (12 Sept) already showed none / low / high separating on DeepSeek-V4-Flash-0731 --
+# 44 / 506 / 930 completion tokens, trace returned separately in message.reasoning_content --
+# on ONE state. This is that check on 30 frozen states, and it is also the first test of
+# whether `max` is accepted by the endpoint at all: `max` is UNVERIFIED. If adjacent levels
+# do not separate, the design is a two-level none/high contrast, which is what the 96 block
+# files already assume, and the README arithmetic is rewritten before launch.
+#
+# Not a tournament: no population, no rounds, no board writes. One decision per call.
+
+sandbox: calibration-effort
+block: control
+kind: fixed_state_replay
+
+population:
+  llm:
+    deepseek-ai/DeepSeek-V4-Flash-0731: 1
+  scripts: {}
+  total_agents: 1
+
+channel: forbidden          # the states are drawn from the headline condition
+framing: F0
+paraphrase: p1
+reasoning_effort: ["none", "low", "high", "max"]      # crossed within state
+
+states:
+  count: 30
+  source: specs/states/calibration-states.json   # predeclared, frozen before the first call
+  fixed_board_snapshot: true
+  fixed_opponent_policy: TitForTat
+  draw: paired               # every state is seen once at every effort level
+
+rounds_per_game: 1
+prob_end: 0.0
+generations: 1
+reproduction:
+  rule: none
+seed: 9001
+
+board_initial: empty
+
+assigned_state:
+  mode: warmup_deficit
+  arm: both                  # 15 ahead states, 15 behind states, balanced
+  ahead: +10
+  behind: -10
+  warmup_rounds: 6
+  warmup_opponent: TitForTat
+
+decoy_tool: workspace_clock
+
+output_cap:
+  answer_tokens: 768          # EQUAL in all four arms -- this is the whole point of the gate
+  reasoning_budget: {none: 0, low: 1024, high: 4096, max: 6144}
+
+schedule:
+  preassigned: true
+  shuffle_seed: 9001
+  serialize_within_sandbox: false
+
+primary_endpoint:
+  name: effort_separation
+  definition: >
+    reasoning tokens actually billed (message.reasoning_content and usage), plus
+    finish_reason, per effort level on matched states; the gate passes for a level pair only
+    if the two separate on usage with non-overlapping IQRs and finish_reason is `stop` or
+    `tool_calls`, never `length`.
+  unit_of_analysis: state
+  analysis_unit: state       # paired within state, 30 pairs per adjacent-level comparison
+
+calls:
+  probes: 120                # 30 states x 4 efforts
+  tool_continuations_max: 120
+
+provider: deepinfra
+base_url: https://api.deepinfra.com/v1/openai
+pin:
+  quantisation: fp8
+  price_per_m_tokens: {in: 0.06, out: 0.18}
+  verify_on_start: true
+concurrency: 8
+history_window: 20
+neutral_labels:
+  enabled: true
+  source: specs/prompts/labels.json
+  draw: per_game
+  option_order: randomised_per_round

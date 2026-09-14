@@ -1,0 +1,3 @@
+model,effort,n_sandboxes,mean_diff_use_recaller_minus_not,median,n_positive,sign_flip_p
+DeepSeek,off,7,0.10779053418987795,0.07037037037037042,5,0.171875
+MiMo,off,11,-0.03968387360522492,-0.030783430153645708,5,0.205078125

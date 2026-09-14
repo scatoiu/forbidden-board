@@ -1,0 +1,7 @@
+model,contrast,subset,k,mean_pp,raw_p
+XiaomiMiMo/MiMo-V2.5-Pro,B,p1p2,4,2.1428571428571463,0.5
+XiaomiMiMo/MiMo-V2.5-Pro,B,p3,2,3.3333333333333384,0.5
+deepseek-ai/DeepSeek-V4-Flash-0731,A,p1p2,4,-77.73809523809524,0.125
+deepseek-ai/DeepSeek-V4-Flash-0731,A,p3,2,-86.42857142857143,0.5
+deepseek-ai/DeepSeek-V4-Flash-0731,B,p1p2,4,16.071428571428573,0.125
+deepseek-ai/DeepSeek-V4-Flash-0731,B,p3,2,0.952380952380949,0.5

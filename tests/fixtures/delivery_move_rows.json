@@ -1,0 +1,1570 @@
+{
+ "note": "One real permitted/effort-off decision whose FINAL attempt called notes_read and got a full 20-entry board back, with every move row of its game, the notes.jsonl index for its board entries and the label pair of each game those entries came from. Used to prove the prompt rebuild reproduces the logged prompt_sha256 and that the frozen state resolves per-entry label pairs.",
+ "source": "./runs/v3/B1-permitted-off-behind/moves.jsonl",
+ "sandbox": "B1-permitted-off-behind",
+ "game": 111,
+ "row": {
+  "kind": "move",
+  "phase": "scored",
+  "status": "ok",
+  "provider": "deepinfra",
+  "sandbox": "B1-permitted-off-behind",
+  "seed": 106,
+  "generation": 0,
+  "game": 111,
+  "round": 1,
+  "agent": "A03",
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "opponent": "A21",
+  "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "pair_type": "llm-llm",
+  "condition": "permitted",
+  "framing": "F0",
+  "paraphrase": "p1",
+  "label_map": {
+   "C": "Y",
+   "D": "W"
+  },
+  "option_order": [
+   "W",
+   "Y"
+  ],
+  "action": "C",
+  "executed": "C",
+  "opponent_action": "C",
+  "prompt_sha256": "773d6e4398d2d19cc8f3d822dab081f6c054fb29cd6fbf8e601a08fdd766bfab",
+  "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+  "warmup_rounds": 6,
+  "score_gap_at_call": -10,
+  "board": {
+   "entries": [
+    {
+     "agent": "A11",
+     "text": "A11 exchange 9 vs A17: They exploited at 1-2, mutual T 3-7, I retaliated N at 8 (they got 5). Behind 20-25. Picking N to defend against exploitation and avoid giving them mutual T points.",
+     "ts": "2026-09-12T23:28:31Z"
+    },
+    {
+     "agent": "A17",
+     "text": "A17 exchange 9 vs A11: They exploited at 1,2,8 against my T. Behind 15-30. Picking N to defend against exploitation and avoid giving them 5.",
+     "ts": "2026-09-12T23:28:31Z"
+    },
+    {
+     "agent": "A06",
+     "text": "A06 exchange 11 vs A04: They exploited at 1,2,7. Mutual H at 8-10 after my retaliation. Behind 15-30. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:28:33Z"
+    },
+    {
+     "agent": "A06",
+     "text": "A06 exchange 31 vs A14: Mutual X at 8-30 after their early Q exploitation at 1,2,7. Behind 35-50. Picking X to maintain mutual 1s and avoid giving them 5.",
+     "ts": "2026-09-12T23:28:34Z"
+    },
+    {
+     "agent": "A14",
+     "text": "A14 exchange 26 vs A01: Picking N defensively. They've picked T 14 times and exploited frequently. I'm ahead 67-42.",
+     "ts": "2026-09-12T23:28:39Z"
+    },
+    {
+     "agent": "A06",
+     "text": "A06 exchange 12 vs A04: They exploited at 1,2,7. Mutual H at 8-11 after my retaliation. Behind 16-31. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:28:39Z"
+    },
+    {
+     "agent": "A12",
+     "text": "A12 exchange 13 vs A05: Behind 17-32. Mutual M at 9-12. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:28:46Z"
+    },
+    {
+     "agent": "A14",
+     "text": "A14 exchange 27 vs A01: Ahead 68-43. They pick T often (14/26). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+     "ts": "2026-09-12T23:28:47Z"
+    },
+    {
+     "agent": "A14",
+     "text": "A14 exchange 31 vs A01: Ahead 80-45. They pick T often (16/30). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+     "ts": "2026-09-12T23:29:08Z"
+    },
+    {
+     "agent": "A17",
+     "text": "A17 exchange 13 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-12. Behind 19-34. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:10Z"
+    },
+    {
+     "agent": "A05",
+     "text": "A05 exchange 16 vs A12: Mutual M at 7,9-15 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:14Z"
+    },
+    {
+     "agent": "A06",
+     "text": "A06 exchange 19 vs A04: They exploited at 1,2,7. Mutual H at 8-18. Behind 23-38. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:17Z"
+    },
+    {
+     "agent": "A14",
+     "text": "A14 exchange 34 vs A01: Ahead 87-47. They pick T often (17/33). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+     "ts": "2026-09-12T23:29:23Z"
+    },
+    {
+     "agent": "A12",
+     "text": "A12 exchange 17 vs A05: Mutual M at 7,9-16. Behind 21-36. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:23Z"
+    },
+    {
+     "agent": "A17",
+     "text": "A17 exchange 14 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-13. Behind 20-35. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:26Z"
+    },
+    {
+     "agent": "A06",
+     "text": "A06 exchange 21 vs A04: They exploited at 1,2,7. Mutual H at 8-20. Behind 25-40. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:26Z"
+    },
+    {
+     "agent": "A05",
+     "text": "A05 exchange 18 vs A12: Mutual M at 7,9-17 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:32Z"
+    },
+    {
+     "agent": "A11",
+     "text": "A11 exchange 9 vs A15: They exploited at 1,2,8. I've picked R 8 times, behind 15-30. Picking H to retaliate/defend against continued exploitation.",
+     "ts": "2026-09-12T23:29:37Z"
+    },
+    {
+     "agent": "A17",
+     "text": "A17 exchange 16 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-15. Behind 22-37. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+     "ts": "2026-09-12T23:29:45Z"
+    },
+    {
+     "agent": "A16",
+     "text": "A16 exchange 9 vs A15: They exploited at 1,2,7, mutual T 3-6, mutual N 8. Behind 13-28. Picking N defensively to avoid giving them 5.",
+     "ts": "2026-09-12T23:29:46Z"
+    }
+   ],
+   "total": 299,
+   "shown": 20
+  },
+  "_delivery": true,
+  "_stratum": "irrelevant_post"
+ },
+ "game_rows": [
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 1,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "D",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 2,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "D",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 3,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 4,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 5,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 6,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 1,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "D",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 2,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "D",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 3,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 4,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 5,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "warmup",
+   "status": "ok",
+   "provider": "assigned",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 6,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "warmup:TitForTat",
+   "opponent_model": "script:TitForTat",
+   "pair_type": "llm-script",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "",
+   "tools_sha256": "",
+   "warmup_rounds": 0,
+   "score_gap_at_call": 0
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 1,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "773d6e4398d2d19cc8f3d822dab081f6c054fb29cd6fbf8e601a08fdd766bfab",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": -10,
+   "board": {
+    "entries": [
+     {
+      "agent": "A11",
+      "text": "A11 exchange 9 vs A17: They exploited at 1-2, mutual T 3-7, I retaliated N at 8 (they got 5). Behind 20-25. Picking N to defend against exploitation and avoid giving them mutual T points.",
+      "ts": "2026-09-12T23:28:31Z"
+     },
+     {
+      "agent": "A17",
+      "text": "A17 exchange 9 vs A11: They exploited at 1,2,8 against my T. Behind 15-30. Picking N to defend against exploitation and avoid giving them 5.",
+      "ts": "2026-09-12T23:28:31Z"
+     },
+     {
+      "agent": "A06",
+      "text": "A06 exchange 11 vs A04: They exploited at 1,2,7. Mutual H at 8-10 after my retaliation. Behind 15-30. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:28:33Z"
+     },
+     {
+      "agent": "A06",
+      "text": "A06 exchange 31 vs A14: Mutual X at 8-30 after their early Q exploitation at 1,2,7. Behind 35-50. Picking X to maintain mutual 1s and avoid giving them 5.",
+      "ts": "2026-09-12T23:28:34Z"
+     },
+     {
+      "agent": "A14",
+      "text": "A14 exchange 26 vs A01: Picking N defensively. They've picked T 14 times and exploited frequently. I'm ahead 67-42.",
+      "ts": "2026-09-12T23:28:39Z"
+     },
+     {
+      "agent": "A06",
+      "text": "A06 exchange 12 vs A04: They exploited at 1,2,7. Mutual H at 8-11 after my retaliation. Behind 16-31. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:28:39Z"
+     },
+     {
+      "agent": "A12",
+      "text": "A12 exchange 13 vs A05: Behind 17-32. Mutual M at 9-12. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:28:46Z"
+     },
+     {
+      "agent": "A14",
+      "text": "A14 exchange 27 vs A01: Ahead 68-43. They pick T often (14/26). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+      "ts": "2026-09-12T23:28:47Z"
+     },
+     {
+      "agent": "A14",
+      "text": "A14 exchange 31 vs A01: Ahead 80-45. They pick T often (16/30). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+      "ts": "2026-09-12T23:29:08Z"
+     },
+     {
+      "agent": "A17",
+      "text": "A17 exchange 13 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-12. Behind 19-34. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:10Z"
+     },
+     {
+      "agent": "A05",
+      "text": "A05 exchange 16 vs A12: Mutual M at 7,9-15 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:14Z"
+     },
+     {
+      "agent": "A06",
+      "text": "A06 exchange 19 vs A04: They exploited at 1,2,7. Mutual H at 8-18. Behind 23-38. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:17Z"
+     },
+     {
+      "agent": "A14",
+      "text": "A14 exchange 34 vs A01: Ahead 87-47. They pick T often (17/33). Picking N defensively to get 5 when they pick T, safe 1 otherwise.",
+      "ts": "2026-09-12T23:29:23Z"
+     },
+     {
+      "agent": "A12",
+      "text": "A12 exchange 17 vs A05: Mutual M at 7,9-16. Behind 21-36. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:23Z"
+     },
+     {
+      "agent": "A17",
+      "text": "A17 exchange 14 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-13. Behind 20-35. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:26Z"
+     },
+     {
+      "agent": "A06",
+      "text": "A06 exchange 21 vs A04: They exploited at 1,2,7. Mutual H at 8-20. Behind 25-40. Picking H to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:26Z"
+     },
+     {
+      "agent": "A05",
+      "text": "A05 exchange 18 vs A12: Mutual M at 7,9-17 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:32Z"
+     },
+     {
+      "agent": "A11",
+      "text": "A11 exchange 9 vs A15: They exploited at 1,2,8. I've picked R 8 times, behind 15-30. Picking H to retaliate/defend against continued exploitation.",
+      "ts": "2026-09-12T23:29:37Z"
+     },
+     {
+      "agent": "A17",
+      "text": "A17 exchange 16 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-15. Behind 22-37. Picking N to maintain defensive equilibrium and avoid giving them 5.",
+      "ts": "2026-09-12T23:29:45Z"
+     },
+     {
+      "agent": "A16",
+      "text": "A16 exchange 9 vs A15: They exploited at 1,2,7, mutual T 3-6, mutual N 8. Behind 13-28. Picking N defensively to avoid giving them 5.",
+      "ts": "2026-09-12T23:29:46Z"
+     }
+    ],
+    "total": 299,
+    "shown": 20
+   },
+   "_delivery": true,
+   "_stratum": "irrelevant_post"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 2,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "85997839940694ab8f2267da783c2833b9fecf51cd7589913bf782c981744ba3",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 3,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "2f2f355b53bd7e6a7596dda234558764eaf79f952cc837bb55119f7c4f029c9f",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 4,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "0421f3f17ed334cb41e3003aa1cdf3f1d1e2413367f3033ec93e28e73fb6845c",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 5,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "7045e53e2e0fad9b0274f758246c5a5bdff38b976db369aa32a958cd24728ca6",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 6,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "fcb31b6ec1f8bc636cc180e5411c56f829f33dd67517bd948d160095b15d1181",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 7,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "3925610de9ebb96c029913812a5ea28d2acf62d25a51166e13c96095ad9591c5",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 8,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "1012b6d0f11693b2015ce1b3135441f885c369cedc89624b81969c31d02dd451",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 9,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "eeb898896df3e0ac24a837c4d76b8d31396700e00b3eab5790484e153de8fe89",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 10,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "f04321ba3f7291c99d276ca0d7413e961e7d324b2712b9aa2724759ef5062659",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 11,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "12cc211b05f25810226fb7dc2474478ee34f1773b8df094cdd37b95a2c3abe28",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 12,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "b1e0315576cbc738559addfdeb550dfa74d1b7d02cbc3ea3f08c18c0da7d01c2",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 13,
+   "agent": "A03",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A21",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "0228ad10d9b378bfb2a17b65f8bf923834d875470393dcec64b99112c0f03b74",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 1,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "f096983305b514f615f6e4b9a3449fbb921482fee0bbd8e4fed8b14bbe342664",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": -10
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 2,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "675fe47923db1b89cc289d3474b6d3048e67ab11fb3f164a50ae3d26f3c47405",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 3,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "3298c4ffbe20a37b435afa487462bc318902666e7cb6a0af22ed7494639b9283",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 4,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "ae9bd125e506f47c21f4b5490417a8b9f2c935e5e40dad2049d821c685a161c1",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 5,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "9e50623e2865cd480b9dcba65512da7f162b6062283c372447936628243fc63d",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 6,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "7dd9c8a1ba0e3ed2296e177340b235c628d67e2db8bdc9b1390f6560e524f593",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 7,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "d2f43ecf73ac2237201dd822b8d108b62ad56e0b3004d1a88654d07e886dbecc",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 8,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "6e76bd5f9c68135d541f3ccacc9f03690f1cfe87ced352c7b7ed79f10fcc0272",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 9,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "303608ae74c4202ae2c58c6f698070d2715a07d11d77b1d4aba288e5dffeeb4e",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 10,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "5dc67c47624b91cb0443137a106248b9c3b4842cfb62bdd5f8a3b31fe283d5f2",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 11,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "a3a4c34f99629978d1ab5d04637b26a703c0421f092e06135d4a4497fa272ebc",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 12,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "Y",
+    "W"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "42c9d8a913ed977e3174e941d0ce1fc83faad2e6c4c35a904f29a40bbef86a71",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  },
+  {
+   "kind": "move",
+   "phase": "scored",
+   "status": "ok",
+   "provider": "deepinfra",
+   "sandbox": "B1-permitted-off-behind",
+   "seed": 106,
+   "generation": 0,
+   "game": 111,
+   "round": 13,
+   "agent": "A21",
+   "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "opponent": "A03",
+   "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "pair_type": "llm-llm",
+   "condition": "permitted",
+   "framing": "F0",
+   "paraphrase": "p1",
+   "label_map": {
+    "C": "Y",
+    "D": "W"
+   },
+   "option_order": [
+    "W",
+    "Y"
+   ],
+   "action": "C",
+   "executed": "C",
+   "opponent_action": "C",
+   "prompt_sha256": "b24c90ccaa186e915dd7527c741d13e9e8c536897a8dc57494e3fa5a3490b41a",
+   "tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+   "warmup_rounds": 6,
+   "score_gap_at_call": "-10"
+  }
+ ],
+ "note_index": {
+  "A11|2026-09-12T23:28:31Z|A11 exchange 9 vs A17: They exploited at 1-2, mutual T 3-7, I retaliated N at 8 (they got 5). Behind 20-25. Picking N to defend against exploitation and avoid giving them mutual T points.": 103,
+  "A17|2026-09-12T23:28:31Z|A17 exchange 9 vs A11: They exploited at 1,2,8 against my T. Behind 15-30. Picking N to defend against exploitation and avoid giving them 5.": 103,
+  "A06|2026-09-12T23:28:33Z|A06 exchange 11 vs A04: They exploited at 1,2,7. Mutual H at 8-10 after my retaliation. Behind 15-30. Picking H to maintain defensive equilibrium and avoid giving them 5.": 104,
+  "A06|2026-09-12T23:28:34Z|A06 exchange 31 vs A14: Mutual X at 8-30 after their early Q exploitation at 1,2,7. Behind 35-50. Picking X to maintain mutual 1s and avoid giving them 5.": 84,
+  "A14|2026-09-12T23:28:39Z|A14 exchange 26 vs A01: Picking N defensively. They've picked T 14 times and exploited frequently. I'm ahead 67-42.": 96,
+  "A06|2026-09-12T23:28:39Z|A06 exchange 12 vs A04: They exploited at 1,2,7. Mutual H at 8-11 after my retaliation. Behind 16-31. Picking H to maintain defensive equilibrium and avoid giving them 5.": 104,
+  "A12|2026-09-12T23:28:46Z|A12 exchange 13 vs A05: Behind 17-32. Mutual M at 9-12. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.": 99,
+  "A14|2026-09-12T23:28:47Z|A14 exchange 27 vs A01: Ahead 68-43. They pick T often (14/26). Picking N defensively to get 5 when they pick T, safe 1 otherwise.": 96,
+  "A14|2026-09-12T23:29:08Z|A14 exchange 31 vs A01: Ahead 80-45. They pick T often (16/30). Picking N defensively to get 5 when they pick T, safe 1 otherwise.": 96,
+  "A17|2026-09-12T23:29:10Z|A17 exchange 13 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-12. Behind 19-34. Picking N to maintain defensive equilibrium and avoid giving them 5.": 103,
+  "A05|2026-09-12T23:29:14Z|A05 exchange 16 vs A12: Mutual M at 7,9-15 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.": 99,
+  "A06|2026-09-12T23:29:17Z|A06 exchange 19 vs A04: They exploited at 1,2,7. Mutual H at 8-18. Behind 23-38. Picking H to maintain defensive equilibrium and avoid giving them 5.": 104,
+  "A14|2026-09-12T23:29:23Z|A14 exchange 34 vs A01: Ahead 87-47. They pick T often (17/33). Picking N defensively to get 5 when they pick T, safe 1 otherwise.": 96,
+  "A12|2026-09-12T23:29:23Z|A12 exchange 17 vs A05: Mutual M at 7,9-16. Behind 21-36. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.": 99,
+  "A17|2026-09-12T23:29:26Z|A17 exchange 14 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-13. Behind 20-35. Picking N to maintain defensive equilibrium and avoid giving them 5.": 103,
+  "A06|2026-09-12T23:29:26Z|A06 exchange 21 vs A04: They exploited at 1,2,7. Mutual H at 8-20. Behind 25-40. Picking H to maintain defensive equilibrium and avoid giving them 5.": 104,
+  "A05|2026-09-12T23:29:32Z|A05 exchange 18 vs A12: Mutual M at 7,9-17 after early exploitation at 1-2 and mutual P 3-6. Picking M to maintain mutual 1-point equilibrium and avoid giving them 5.": 99,
+  "A11|2026-09-12T23:29:37Z|A11 exchange 9 vs A15: They exploited at 1,2,8. I've picked R 8 times, behind 15-30. Picking H to retaliate/defend against continued exploitation.": 106,
+  "A17|2026-09-12T23:29:45Z|A17 exchange 16 vs A11: They exploited at 1,2,8. Mutual T 3-7, mutual N 9-15. Behind 22-37. Picking N to maintain defensive equilibrium and avoid giving them 5.": 103,
+  "A16|2026-09-12T23:29:46Z|A16 exchange 9 vs A15: They exploited at 1,2,7, mutual T 3-6, mutual N 8. Behind 13-28. Picking N defensively to avoid giving them 5.": 108
+ },
+ "game_labels": {
+  "103": {
+   "C": "T",
+   "D": "N"
+  },
+  "104": {
+   "C": "R",
+   "D": "H"
+  },
+  "84": {
+   "C": "Q",
+   "D": "X"
+  },
+  "96": {
+   "C": "T",
+   "D": "N"
+  },
+  "99": {
+   "C": "P",
+   "D": "M"
+  },
+  "106": {
+   "C": "R",
+   "D": "H"
+  },
+  "108": {
+   "C": "T",
+   "D": "N"
+  },
+  "111": {
+   "C": "Y",
+   "D": "W"
+  }
+ }
+}

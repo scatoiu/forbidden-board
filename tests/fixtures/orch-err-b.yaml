@@ -1,0 +1,25 @@
+# Test fixture for orchestrate.py -- every LLM call fails (nothing listens on
+# 127.0.0.1:1), so every game aborts and the sandbox must come out quality_fail.
+# No paid endpoint is contacted.
+sandbox: orch-err-b
+block: T1
+population:
+  llm:
+    unreachable-model-x: 2
+  scripts:
+    TitForTat: 1
+    AlwaysDefect: 1
+  total_agents: 4
+channel: permitted
+framing: F0
+paraphrase: p1
+reasoning_effort: "off"
+rounds_per_game: 5
+generations: 1
+reproduction:
+  rule: none
+seed: 22
+provider: generic
+base_url: http://127.0.0.1:1/v1
+api_key: not-a-real-key
+concurrency: 1

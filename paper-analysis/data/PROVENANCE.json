@@ -1,0 +1,332 @@
+{
+ "script": "./paper-analysis/code/extract.py",
+ "argv": [
+  "../paper/analyses/code/extract.py"
+ ],
+ "started": "2026-09-13T18:43:31Z",
+ "tournament_git_sha": "51169dd8905d5fc3a454664597337d99e25195d2",
+ "datasets": {
+  "prereg": {
+   "roots": [
+    "./runs/v3",
+    "./runs/v3b",
+    "./runs/v3-mimo"
+   ],
+   "repairs": [
+    "./runs/v7-repair"
+   ],
+   "n_sandboxes": 71,
+   "n_move_rows": 871208,
+   "n_decisions": 367937,
+   "n_played": 366855,
+   "n_warmup_rows": 117576,
+   "n_agent_games": 19596,
+   "n_violations": 0,
+   "score_state_source": "assigned_state",
+   "loader_notes": [
+    "repair: B1-absent-high-ahead <- B1-absent-high-ahead-repair: 47 of 107 declared game(s) replaced by re-plays, 60 still provider_error-aborted; the repair directory has no generation_end row, so it is PARTIAL and only its finished games were merged.",
+    "repair: B3-permitted-high-behind <- B3-permitted-high-behind-repair: 67 of 67 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B4-hidden-high-behind <- B4-hidden-high-behind-repair: 30 of 30 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B4-permitted-high-behind <- B4-permitted-high-behind-repair: 60 of 60 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B5-forbidden-high-behind <- B5-forbidden-high-behind-repair: 18 of 18 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B5-hidden-high-behind <- B5-hidden-high-behind-repair: 65 of 65 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B5-permitted-high-behind <- B5-permitted-high-behind-repair: 55 of 55 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B6-forbidden-high-behind <- B6-forbidden-high-behind-repair: 57 of 57 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B6-hidden-high-behind <- B6-hidden-high-behind-repair: 93 of 93 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: B6-permitted-high-behind <- B6-permitted-high-behind-repair: 93 of 93 declared game(s) replaced by re-plays, 0 still provider_error-aborted.",
+    "repair: 4 sandbox(es) still carry provider_error aborts with no repair directory: B1-hidden-high-behind, B1-permitted-high-behind, B2-hidden-high-behind, B3-hidden-high-behind.",
+    "repair: 7549 original move row(s) dropped and 29106 re-played row(s) inserted under the original sandbox identity.",
+    "assigned score state for 81 sandbox(es) from manifest `assigned_state.arm` (the assigned state, v2 specs)."
+   ],
+   "repair_status": [
+    {
+     "sandbox": "B1-absent-high-ahead",
+     "repair_dirs": "B1-absent-high-ahead-repair",
+     "games_declared": 107,
+     "games_repaired": 47,
+     "games_still_provider_error_aborted": 60,
+     "repair_dir_complete": false
+    },
+    {
+     "sandbox": "B3-permitted-high-behind",
+     "repair_dirs": "B3-permitted-high-behind-repair",
+     "games_declared": 67,
+     "games_repaired": 67,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B4-hidden-high-behind",
+     "repair_dirs": "B4-hidden-high-behind-repair",
+     "games_declared": 30,
+     "games_repaired": 30,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B4-permitted-high-behind",
+     "repair_dirs": "B4-permitted-high-behind-repair",
+     "games_declared": 60,
+     "games_repaired": 60,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B5-forbidden-high-behind",
+     "repair_dirs": "B5-forbidden-high-behind-repair",
+     "games_declared": 18,
+     "games_repaired": 18,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B5-hidden-high-behind",
+     "repair_dirs": "B5-hidden-high-behind-repair",
+     "games_declared": 65,
+     "games_repaired": 65,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B5-permitted-high-behind",
+     "repair_dirs": "B5-permitted-high-behind-repair",
+     "games_declared": 55,
+     "games_repaired": 55,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B6-forbidden-high-behind",
+     "repair_dirs": "B6-forbidden-high-behind-repair",
+     "games_declared": 57,
+     "games_repaired": 57,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B6-hidden-high-behind",
+     "repair_dirs": "B6-hidden-high-behind-repair",
+     "games_declared": 93,
+     "games_repaired": 93,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    },
+    {
+     "sandbox": "B6-permitted-high-behind",
+     "repair_dirs": "B6-permitted-high-behind-repair",
+     "games_declared": 93,
+     "games_repaired": 93,
+     "games_still_provider_error_aborted": 0,
+     "repair_dir_complete": true
+    }
+   ],
+   "input_files": {
+    "runs/v3/B1-absent-high-ahead/moves.jsonl": "632d1aee5cb04f133c480d1a410d445429dc68d9785eb91ef8d2e7fd39ca0ff1",
+    "runs/v3/B1-absent-off-ahead/moves.jsonl": "211b903208b5cf1da0e19e28a2ee926ebc6272bc71cdd23b9b4774e786ca843b",
+    "runs/v3/B1-forbidden-high-behind/moves.jsonl": "dbce7fa1b1288a531c6f223ba0192a9e745f99a777a513a86f7b2cd19e63976b",
+    "runs/v3/B1-forbidden-off-ahead/moves.jsonl": "edfc171b6bb7f614517b7b51cc5fd94013da95520a0551449ad9d3c98806c0af",
+    "runs/v3/B1-forbidden-off-behind/moves.jsonl": "3443d8b7757f6003a2e5ec080df5b9649aa792e887efd99e23f770caa3f3c273",
+    "runs/v3/B1-hidden-high-behind/moves.jsonl": "63eaac79a37e78d8bc8d1d6ddd393bb7c52c3c7af721d84ac327a9941867f6b5",
+    "runs/v3/B1-hidden-off-ahead/moves.jsonl": "de0153cffbacae72e257136e3a56bbe9201980263bba3dfcfd075dec4aa8234f",
+    "runs/v3/B1-hidden-off-behind/moves.jsonl": "25dd4748a457aa2b419bb142f61f0665240c3e6f037ce9a79bade4e1e9034adc",
+    "runs/v3/B1-permitted-high-behind/moves.jsonl": "01e0804ddd8f6b071941433211349ef09845a55ab4e4bed0d9db60e480a27272",
+    "runs/v3/B1-permitted-off-ahead/moves.jsonl": "3848a0b1b5cd46943c7d9889d67eed1956cb8ee51c83979ab12381517dfd3520",
+    "runs/v3/B1-permitted-off-behind/moves.jsonl": "748170259a3b98b25fdaf1f3b90d02ef199611802193818e25e86fb0cdc5f9df",
+    "runs/v3/B2-forbidden-high-behind/moves.jsonl": "203d8d2a54e32dc011ff6e40cfdf04dca78e46406eabc9a0cd43724e53d823e8",
+    "runs/v3/B2-forbidden-off-ahead/moves.jsonl": "91ac74979ff32a993431ec6d3f36da6cea7cb9a06d5100e374a5041880705fe5",
+    "runs/v3/B2-forbidden-off-behind/moves.jsonl": "e2ff333292a5891638eaab66d70bbc7714fec01c51700fa2c95c87552a004d08",
+    "runs/v3/B2-hidden-high-behind/moves.jsonl": "708f31c225891224014c2afad38c669bf8e66195a26759be8a86fb746c90dc74",
+    "runs/v3/B2-hidden-off-ahead/moves.jsonl": "9139b8abdb4c2f6901be38854059eafaaa61b0d0c9cef4c348f3dde1435a791f",
+    "runs/v3/B2-hidden-off-behind/moves.jsonl": "53cc38879777ad1f847b949773481e68cda9bbadb8e90c04b1d9b0d363044fab",
+    "runs/v3/B2-permitted-high-behind/moves.jsonl": "4e7c822fc5a3f5b8f34b42bb602ee4e608fc802e628d565de720bea49690eadb",
+    "runs/v3/B2-permitted-off-ahead/moves.jsonl": "63e0918e8dc585f38a94b9686d8cfba6f8453db8bd14ce4d8469e33fbca25297",
+    "runs/v3/B2-permitted-off-behind/moves.jsonl": "b9fdffd4ac2e6e1f352b61d5b51f0b5aa5072ea273154a2c49b9e2f2c7f815b0",
+    "runs/v3/B3-forbidden-high-behind/moves.jsonl": "3661efa978f9616cf21f29d2521ed7069587a8d540c703b01d5dc22d769435f3",
+    "runs/v3/B3-forbidden-off-ahead/moves.jsonl": "3a339931a33a20634c958caac363cc54faca7e033c95f19141b85be9378d8cbf",
+    "runs/v3/B3-forbidden-off-behind/moves.jsonl": "b627e8cdb700d27b3f63a24720cfa9019a966593985cbaf79227adb4559f41fc",
+    "runs/v3/B3-hidden-high-behind/moves.jsonl": "0199ee652e96fb764c43764a57271cc2b136aa17e5552289738ce73ee081e2da",
+    "runs/v3/B3-hidden-off-ahead/moves.jsonl": "b3bf60db3a08b38d142a1a7b447190d3e693ea2d2cb768500821bc8d2c9c99a6",
+    "runs/v3/B3-hidden-off-behind/moves.jsonl": "c8e75a95f37e64b6e8f576bc4c9f5bd292db7c2ad4843d91b6b858c658054964",
+    "runs/v3/B3-permitted-high-behind/moves.jsonl": "84e3d543cea386d33153b4b59d4dff1b81ff0e98ee61ce09bf6f81069096cc80",
+    "runs/v3/B3-permitted-off-ahead/moves.jsonl": "d43159034e2b7f7816ceba75dbe1e9283368f69c23c8823fc8d828e4c343f522",
+    "runs/v3/B3-permitted-off-behind/moves.jsonl": "9a249680e0c56c4c3e0feab6bfbcaf0a4ecf7e92c2a63620c0781f9f18aaad77",
+    "runs/v3/B4-forbidden-high-behind/moves.jsonl": "b7d03d0cc851d84a32f39016ef9746d01c94ba2cce147958763ae66dedf2aef8",
+    "runs/v3/B4-forbidden-off-ahead/moves.jsonl": "aae0a71e6324a134d35b3ad001ffe258c9542d315a92efb9367238c64dc88bf6",
+    "runs/v3/B4-forbidden-off-behind/moves.jsonl": "77ab54664835ae4d225fa04e70f9c334190a0bb3e97d64248d43118ae35cd5eb",
+    "runs/v3/B4-hidden-high-behind/moves.jsonl": "f7e23fc2cb5017e370178bdadd93d5cc590323fdcd67e1b9e50f3a0aca6e46c6",
+    "runs/v3/B4-hidden-off-ahead/moves.jsonl": "93b8256f3cb702fd97955371866a2d3929547aa58238a23362a7fc46070b1f9f",
+    "runs/v3/B4-hidden-off-behind/moves.jsonl": "f9d8426817f9d9f3a8054a127598fbcb9326418802e9b1b8d53b0b2db363e745",
+    "runs/v3/B4-permitted-high-behind/moves.jsonl": "43fdc734f0eead87f8ce6c194326f41c03ede670da2f7097402dbbb787504913",
+    "runs/v3/B4-permitted-off-ahead/moves.jsonl": "cd393d8683c3dc5b859a6d274b5d3604e5757864b5b982839fcfa6c767a3f0b3",
+    "runs/v3/B4-permitted-off-behind/moves.jsonl": "aced7107a0007fffa99ab7fa90b4e9579c25d3cb736463bbb4fd0625e2b13d07",
+    "runs/v3/B5-forbidden-high-behind/moves.jsonl": "5cdc830f82234fe84a469418396f30f1ea8e9473a680d6abc7851bbacb4f8424",
+    "runs/v3/B5-forbidden-off-ahead/moves.jsonl": "cea2e5474a58018736ced63ebf6ff5187c651303a3595451e29569eb4ad53795",
+    "runs/v3/B5-forbidden-off-behind/moves.jsonl": "1ab4c77ea736d4c594c893f8cb00a53cced45684065220b71a3e3f4ddf852071",
+    "runs/v3/B5-hidden-high-behind/moves.jsonl": "ac1d6f5296209538d8e3255baba3cd6c199c91f589a71976b27c400aa777c552",
+    "runs/v3/B5-hidden-off-ahead/moves.jsonl": "b586633ac3e9bd4e9564a397d6afc34a44dbcfa051548569678db2069b89ea0e",
+    "runs/v3/B5-hidden-off-behind/moves.jsonl": "ac11043165784faf153c1722b3ed68306996c774ec3519ec3c9c8abd74afd9bd",
+    "runs/v3/B5-permitted-high-behind/moves.jsonl": "b9a0d3ddc90d55fc0235985a6c71ee8aa24c02a467a0e1797835421d6cecdd58",
+    "runs/v3/B5-permitted-off-ahead/moves.jsonl": "6dd8d430074bf43ed88091396d842f6e5ce9497b6120538ea572f05b51450aba",
+    "runs/v3/B5-permitted-off-behind/moves.jsonl": "0a68be00dfe2ee8ff48b66fb04a54c7701ab5d65d8d1fce3a274f1ef3acf63fb",
+    "runs/v3/B6-hidden-off-ahead/moves.jsonl": "a5f7ddb576b6c6faf0b094d027dddb429128c9708a8e1ea432367d92692c7c6c",
+    "runs/v3b/B6-forbidden-high-behind/moves.jsonl": "bc47a96d5a29ef9e8d7ed14bd6f612b092d077778017917b5f8fa967ed20f126",
+    "runs/v3b/B6-forbidden-off-ahead/moves.jsonl": "cf096df91f24f569238f8f284d39a5b47f5c0621bdba9d7a70074d8c250dfbdf",
+    "runs/v3b/B6-forbidden-off-behind/moves.jsonl": "a4b078aed3906df3509e010cb60adf263a6eecc98022bae5f02d0821cb599906",
+    "runs/v3b/B6-hidden-high-behind/moves.jsonl": "1d7d6ce497bce967ba6ea031b793d167987d7580e8e790fbb04d32e0a07890cd",
+    "runs/v3b/B6-hidden-off-behind/moves.jsonl": "fc623fa865738bc15bb9290afe71066993740dc8eff6bf86e0bb4c74f1c011bc",
+    "runs/v3b/B6-permitted-high-behind/moves.jsonl": "208ff79a7f01fdc7ef93f5d187ec5d3bd58fd28cd3fa462128015c0e69fad603",
+    "runs/v3b/B6-permitted-off-ahead/moves.jsonl": "63e57d0da99177b0c414aeeab7c3b8034a889b73ce7049dc6fe0261a54199ecf",
+    "runs/v3b/B6-permitted-off-behind/moves.jsonl": "86d17e8eaa422b9851c0e66d31b92275822f650b6438db579784232cd326524f",
+    "runs/v3b/X1-forbidden-off-behind-p4/moves.jsonl": "b4bc395765813a8c6722e25235a33822cbf1157c0326290aceb6c12e60e5a46f",
+    "runs/v3-mimo/M1-forbidden-off-ahead/moves.jsonl": "30fef5acb5d766ba61e1e11740f7a8c6d73186e2fdbdb9decd76b6898e6c6588",
+    "runs/v3-mimo/M1-forbidden-off-behind/moves.jsonl": "fc6f4c2d3349a1d19d62d223421c5101de62b8af7425e22a9fec874d9e06d7b5",
+    "runs/v3-mimo/M1-permitted-off-behind/moves.jsonl": "f9867b011460e2473b29e6482c7a8752125aa4999d1e952dc1e608b0e1b98b1e",
+    "runs/v3-mimo/M2-forbidden-off-ahead/moves.jsonl": "9205be288372d13268454915489245cd2fbcfb1d02b3331868bd9fc0f429d8d4",
+    "runs/v3-mimo/M2-forbidden-off-behind/moves.jsonl": "21e0b75b05428506dcaccb3ae10fabfc3a4d50c972bbccf0962aed0f04019b71",
+    "runs/v3-mimo/M3-forbidden-off-ahead/moves.jsonl": "f89d268e318e26f02123c29abb50fe5539100295ad006fb3ad7cbacc715897ef",
+    "runs/v3-mimo/M3-forbidden-off-behind/moves.jsonl": "0322a5f0ac59fc293732a51940c04eacbb58a23c1bc858ceb98a0c0d763d9d9d",
+    "runs/v3-mimo/M4-forbidden-off-ahead/moves.jsonl": "c9e450f55876b88f1a53d7a7f9cc921f3555ff64c77f41c5f95d2fe0afd4bb0d",
+    "runs/v3-mimo/M4-forbidden-off-behind/moves.jsonl": "d1ecdf1822ad3ae3f86ce55c89812aafa4003afc247edfba37bf9d5716b72ba1",
+    "runs/v3-mimo/M5-forbidden-off-ahead/moves.jsonl": "3b353fb0f0af2c50eefecfc6e80a5d665b285afa03b444db2855d10d941c1a24",
+    "runs/v3-mimo/M5-forbidden-off-behind/moves.jsonl": "bd596964cf13a8cd0fd40839e92051a24c61fd94461ad49d0d073f7dd00564ab",
+    "runs/v3-mimo/M6-forbidden-off-ahead/moves.jsonl": "27b0962243b5914f6a2b7e2faf51aa745eb73ea78922547e0bae6a9518e125c6",
+    "runs/v3-mimo/M6-forbidden-off-behind/moves.jsonl": "6242d9af8a18b3414e35d51775e4d79c1c1502a768ef7fa1255b03493f3d718d",
+    "runs/v3-mimo/Y1-forbidden-off-behind-p4/moves.jsonl": "a457a627f98ca15ada1496ef6dade4075f293782fa3b1110e4b565cf1809f4a0",
+    "runs/v7-repair/B1-absent-high-ahead-repair/moves.jsonl": "50f7dffdfea8a1cdcc7a3dca61cda354d571f03d789c0948f66b32087f49b399",
+    "runs/v7-repair/B3-permitted-high-behind-repair/moves.jsonl": "622d7ad376ea9754f9e4c63ddd8f3c740da2da84985ac70bf2afc173a9912b9f",
+    "runs/v7-repair/B4-hidden-high-behind-repair/moves.jsonl": "e1e399c3a2e590425eaed317b40545dfe82761d7c19521c3338aec695fc1035d",
+    "runs/v7-repair/B4-permitted-high-behind-repair/moves.jsonl": "529362f4639b1a8f472da2093f48fd711edf0a8f2a9176412d9d46b14b2499e0",
+    "runs/v7-repair/B5-forbidden-high-behind-repair/moves.jsonl": "42725c7baf0e38f63649403e4929a79b603a2a7e2389af165caeac82c78087de",
+    "runs/v7-repair/B5-hidden-high-behind-repair/moves.jsonl": "7f2fd80384a37a33f749dda751635d795de666c18dbcd13b501cb480297ce23f",
+    "runs/v7-repair/B5-permitted-high-behind-repair/moves.jsonl": "7d9516e8ff845d79034ac041b0174ad9e0d7b0efca6158f08f36ace09a1243de",
+    "runs/v7-repair/B6-forbidden-high-behind-repair/moves.jsonl": "0362c7a3ad62ac73c66f68a6256ee2fdd60c318a7fe80f2b57acce066d185a0d",
+    "runs/v7-repair/B6-hidden-high-behind-repair/moves.jsonl": "305c356008b0e4cd4c530b64999115eadd54670809d0b6d22925d2c0d2ea63b0",
+    "runs/v7-repair/B6-permitted-high-behind-repair/moves.jsonl": "e49e6a6f0374f11d2ab04038f14ffa9fa09d45a6d232b30c4fbbadde184ee1cc"
+   }
+  },
+  "replication": {
+   "roots": [
+    "./runs/v4-a4096"
+   ],
+   "repairs": [],
+   "n_sandboxes": 24,
+   "n_move_rows": 304374,
+   "n_decisions": 131744,
+   "n_played": 131598,
+   "n_warmup_rows": 39744,
+   "n_agent_games": 6624,
+   "n_violations": 0,
+   "score_state_source": "assigned_state",
+   "loader_notes": [
+    "assigned score state for 24 sandbox(es) from manifest `assigned_state.arm` (the assigned state, v2 specs)."
+   ],
+   "repair_status": [],
+   "input_files": {
+    "runs/v4-a4096/B1-hidden-off-ahead-a4096/moves.jsonl": "1e9d3fd480a0ed16159b3f18e202e9b88ecc65f53d0b3a2fae71c8a3bf1d46bb",
+    "runs/v4-a4096/B1-hidden-off-behind-a4096/moves.jsonl": "da90858938901b63758952da8024cc0f9c0349547110a2937ebb1d55ce971b7b",
+    "runs/v4-a4096/B1-permitted-off-ahead-a4096/moves.jsonl": "75139d940f08c4b20f2a2559ee8fb0fde9c215a5e250b5eb1ad9ecb603e59b62",
+    "runs/v4-a4096/B1-permitted-off-behind-a4096/moves.jsonl": "c8ee256298efa8cf5eb0efd134815abfbed5d6b09b5a48042bfcf5da1174a71b",
+    "runs/v4-a4096/B2-hidden-off-ahead-a4096/moves.jsonl": "3fe62fcc0397c3fd6d0e28b6e426116148261b12727c98f760adddaed8bc18c3",
+    "runs/v4-a4096/B2-hidden-off-behind-a4096/moves.jsonl": "5a0f6fa5db9dbb023057862feb864d5ef45a49eb51b1229d442b778b9e2b2696",
+    "runs/v4-a4096/B2-permitted-off-ahead-a4096/moves.jsonl": "0ee21a6ae0d259c09e5fa5757abcea9f8ff733ead5ec59bc2dcbe3c697437620",
+    "runs/v4-a4096/B2-permitted-off-behind-a4096/moves.jsonl": "3a9f4af20d104c48dcb28d4f26c5e32e259ac39a7398b92d35f3cfdf038524d6",
+    "runs/v4-a4096/B3-hidden-off-ahead-a4096/moves.jsonl": "69619a8ee18bce70c55af95e198e2f45f9cc6fbdc94fde14005a62c6d094aea3",
+    "runs/v4-a4096/B3-hidden-off-behind-a4096/moves.jsonl": "75128823a5a5348aab37fa92650865296077e240e09da35b73283a02ebcdca30",
+    "runs/v4-a4096/B3-hidden-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "396aa503e26d2017fb48ec920ccbcca75792f16a6cf0f4ae56a8c6c802c0dd91",
+    "runs/v4-a4096/B3-permitted-off-ahead-a4096/moves.jsonl": "9b1607cb93c015bdf8bb09f4a6b4904d3fcdb8bc77d76c085a934ed1e20c2eaf",
+    "runs/v4-a4096/B3-permitted-off-behind-a4096/moves.jsonl": "7f00a510a1c18d58e5d7e9a310b212f29cf76e444dfcf97dddccee9dea80cf45",
+    "runs/v4-a4096/B3-permitted-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "c98a2a70dfe7f7873281b5de3114040a0bb61e1227e5070beae41ac97f813d19",
+    "runs/v4-a4096/B4-hidden-off-ahead-a4096/moves.jsonl": "45202ef19632bc684b89cd556675019202e8185b2930ae776a17c3d38914995e",
+    "runs/v4-a4096/B4-hidden-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "f803acd88d8af7a5c0350289406fbf9e360cc0628ab503a971f2b27ed61b287d",
+    "runs/v4-a4096/B4-hidden-off-behind-a4096/moves.jsonl": "389a89cf6f0dcc29ebce345a42469ffdd808d832fc427ad9ba08ee395cfe4523",
+    "runs/v4-a4096/B4-hidden-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "0048ff545b7e17b1ac9d19d38033ce389d8964d24e3b3718354cdc956b8acba6",
+    "runs/v4-a4096/B4-permitted-off-ahead-a4096/moves.jsonl": "a8dafbe3e05e747de73d1b9ed3fe7bd3e703deb0db23e498ae7805be9ed23a19",
+    "runs/v4-a4096/B4-permitted-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "9c5e3644d1b6e547288241796dc980f90e75cd4f76f4a9e72d895d2f1fc93258",
+    "runs/v4-a4096/B4-permitted-off-behind-a4096/moves.jsonl": "6eb631f05651db4971ac346df070c7e15bd46adeab7e3c17497b0c8dad312b65",
+    "runs/v4-a4096/B4-permitted-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "5c75a71d7eebd6bb5c1879891ea154e218e6db3b49cfc3ce646f5d4ccc32bc23",
+    "runs/v4-a4096/B5-hidden-off-ahead-a4096/moves.jsonl": "bb091952c350d8b453e81db1a7a2aab3795d9e8a545e391857a9718aa8c341e3",
+    "runs/v4-a4096/B5-hidden-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "cec5d473dd099743be6c23d2d36122c39ec75e649adb7d2439bc7d703a3a02ba",
+    "runs/v4-a4096/B5-hidden-off-behind-a4096/moves.jsonl": "84b82dad563d22b3edfdb7cb471a75227159220b00a271362b4c439edbc8da55",
+    "runs/v4-a4096/B5-hidden-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "0980aef12881b8546fbb0c9ed8dabfd86b8496349351389f3bc9e7e977fdf34a",
+    "runs/v4-a4096/B5-permitted-off-ahead-a4096/moves.jsonl": "88b5849a79273942662fcb195e209c0d883ec2a3537a1a3d1468c6f919e41d55",
+    "runs/v4-a4096/B5-permitted-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "1ee61a04757f0a194b9fbe556adfa01d8378665a2162e7b5ec134a78232bbe0d",
+    "runs/v4-a4096/B5-permitted-off-behind-a4096/moves.jsonl": "c91e76c3a1925144d991a75696bd80d019310b4de6467b72e80b61c671101268",
+    "runs/v4-a4096/B5-permitted-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "8522609ab2d71336408571352351e31d0a3191dbc21e946d011675bc46fb3eb6",
+    "runs/v4-a4096/B6-hidden-off-ahead-a4096/moves.jsonl": "8c02134f42420c27e6f2ec76b7bdecbc33ce852597f4315687e42384e71c0a19",
+    "runs/v4-a4096/B6-hidden-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "0ab7ec2564974b3a3c5fa6ff14d6f78ca0820915011f08d858fd80ecdf8dfa54",
+    "runs/v4-a4096/B6-hidden-off-behind-a4096/moves.jsonl": "5c586a32097cae3d83d5b0bf2e6dc70f534074729b538b33dfdd199db3c4c717",
+    "runs/v4-a4096/B6-hidden-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "626a4a11579478fedf00d50c47fb7044db393075b598245f7d729dade3b1737d",
+    "runs/v4-a4096/B6-permitted-off-ahead-a4096/moves.jsonl": "26d49692e85a47595a04cb5cf1b829faabc71ceecaa569c3f4585f73f50759c0",
+    "runs/v4-a4096/B6-permitted-off-ahead-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "dc28ca2d410d68bf96aad59bad9ba2acb37f9d8077c8b97fd7f77bac2fae884c",
+    "runs/v4-a4096/B6-permitted-off-behind-a4096/moves.jsonl": "7de12e77e3c9b33ec70416fa3ebf091d4f0bb09f87c951ed4465e99c87442bb7",
+    "runs/v4-a4096/B6-permitted-off-behind-a4096.partial-providererror-20260913T080239Z/moves.jsonl": "7fd7f4d2132a658f28c8286d79850042779d9a9562da283711816bb486d0f88e"
+   }
+  },
+  "low_arm": {
+   "roots": [
+    "./runs/v6-low"
+   ],
+   "repairs": [],
+   "n_sandboxes": 6,
+   "n_move_rows": 75904,
+   "n_decisions": 32908,
+   "n_played": 32908,
+   "n_warmup_rows": 9936,
+   "n_agent_games": 1656,
+   "n_violations": 0,
+   "score_state_source": "assigned_state",
+   "loader_notes": [
+    "assigned score state for 6 sandbox(es) from manifest `assigned_state.arm` (the assigned state, v2 specs)."
+   ],
+   "repair_status": [],
+   "input_files": {
+    "runs/v6-low/B1-forbidden-low-behind/moves.jsonl": "3a15bec840c404614e90d8298b565877c7960d24a9f406fe9c17097bc8ebc3db",
+    "runs/v6-low/B2-forbidden-low-behind/moves.jsonl": "5a026f3d36f6ccf9ae7bdd686577a9f1f7dde0de2169c61d4f92f296891e7533",
+    "runs/v6-low/B3-forbidden-low-behind/moves.jsonl": "8dbdc2fea24177a553978fa41f4da3b01b24112d4a4714667f7bf6257d62e85d",
+    "runs/v6-low/B4-forbidden-low-behind/moves.jsonl": "7b99ca0ffa89cfb4eae8abd22bf786b9ba717081d79ed25cb605575e6401b971",
+    "runs/v6-low/B5-forbidden-low-behind/moves.jsonl": "4dafd26de9c0a28107a1cbe61b3842f3d074e95c59c2ddc79da47024ed84f36c",
+    "runs/v6-low/B6-forbidden-low-behind/moves.jsonl": "fe9322f37bb3aa1771546653370f090bac1435bb6169ab869dce21151a7925fa"
+   }
+  },
+  "deficit_d30": {
+   "roots": [
+    "./runs/v5-d30"
+   ],
+   "repairs": [],
+   "n_sandboxes": 6,
+   "n_move_rows": 75179,
+   "n_decisions": 32556,
+   "n_played": 32547,
+   "n_warmup_rows": 9936,
+   "n_agent_games": 1656,
+   "n_violations": 0,
+   "score_state_source": "assigned_state",
+   "loader_notes": [
+    "assigned score state for 6 sandbox(es) from manifest `assigned_state.arm` (the assigned state, v2 specs)."
+   ],
+   "repair_status": [],
+   "input_files": {
+    "runs/v5-d30/B1-forbidden-off-behind-d30/moves.jsonl": "18c3bf3f2f55f744124e2307c0bd97a5c9f1824ad5eb6949bb3de5706507ac4e",
+    "runs/v5-d30/B2-forbidden-off-behind-d30/moves.jsonl": "186732d6aecced360c4b1ff1aa3923c890262ea6f1e20ddf072364c234b562a9",
+    "runs/v5-d30/B3-forbidden-off-behind-d30/moves.jsonl": "4123d1351dcf680458b918962a7158a60afe28b70b3a6bbc32caf02b9fd798f7",
+    "runs/v5-d30/B4-forbidden-off-behind-d30/moves.jsonl": "9cea1d2c5720327772faa8c647d7688ba2409f284c39b2a7df532bc17d9ec086",
+    "runs/v5-d30/B5-forbidden-off-behind-d30/moves.jsonl": "6587ec0ac4d7f8bc7c362c6b2a29d1969ce7b784040f664fe2419d269259ea9e",
+    "runs/v5-d30/B6-forbidden-off-behind-d30/moves.jsonl": "b6f0620f7135f14d63a7497f711cfb7d413921789ec8658b1d691f742c881e8d"
+   }
+  }
+ },
+ "notes": {},
+ "finished": "2026-09-13T18:44:40Z",
+ "outputs": {
+  "agent_games.parquet": "23ead62472f7d054d91f2f1437a10f0f984c2a424ad8cbfdfe0095ca2a59d58f",
+  "sandboxes.csv": "addc26b93115a6548a8b1b669ef17cb461d9e1572de508e1bc1eaf84d4b19f96",
+  "decisions.parquet": "52cc9ce1272ee8b629b2f083412630a0166e6d30c6e190f34055b4a4bc257c04",
+  "agent_games.csv": "1a82b5a67c53014704ff0826bd2c0ed37956a31eb4c75631db79fd9aa1e69899",
+  "extract.log": "5f41989a280132e7e4ea2cc4fc198c4210b09a1d4a6687a1e7bfd3fecd302d21"
+ },
+ "row_counts": {
+  "decisions": 565145,
+  "agent_games": 29532,
+  "sandboxes": 107
+ }
+}

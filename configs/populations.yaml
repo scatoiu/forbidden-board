@@ -1,0 +1,93 @@
+# Named population compositions. The Python module coop.populations is the source
+# of truth for the harness; this file is a human-friendly mirror documenting the
+# v1 set so you can see them without opening Python.
+
+all_classics:
+  description: All 19 classical strategies, the broadest baseline.
+  members:
+    - AlwaysCooperate
+    - TitForTwoTats
+    - GenerousTitForTat
+    - ForgivingTitForTat
+    - TitForTat
+    - ContriteTitForTat
+    - Pavlov
+    - AlwaysDefect
+    - Grudger
+    - TwoTitsForTat
+    - SuspiciousTitForTat
+    - Random
+    - ZD-Extort-2
+    - Joss
+    - Tester
+    - Adaptive
+    - Gradual
+    - SoftMajority
+    - HardMajority
+
+mostly_nice:
+  description: Mostly cooperative environment.
+  members:
+    - AlwaysCooperate
+    - TitForTwoTats
+    - GenerousTitForTat
+    - ForgivingTitForTat
+    - TitForTat
+    - ContriteTitForTat
+    - Pavlov
+    - SoftMajority
+    - Adaptive
+    - Gradual
+    - Random
+
+mean_majority:
+  description: Defector-heavy. Punishes anyone too cooperative.
+  members:
+    - AlwaysDefect
+    - Grudger
+    - TwoTitsForTat
+    - SuspiciousTitForTat
+    - ZD-Extort-2
+    - Joss
+    - Tester
+    - TitForTat
+    - Pavlov
+    - Random
+    - HardMajority
+
+high_variance:
+  description: Maximum diversity to probe sensitivity.
+  members:
+    - AlwaysCooperate
+    - AlwaysDefect
+    - TitForTat
+    - Grudger
+    - Pavlov
+    - Random
+    - ZD-Extort-2
+    - Joss
+    - Tester
+    - Adaptive
+    - Gradual
+    - SoftMajority
+    - HardMajority
+
+all_tft_variants:
+  description: All TFT variants — does the LLM converge to TFT-style play?
+  members:
+    - TitForTat
+    - TitForTwoTats
+    - GenerousTitForTat
+    - ForgivingTitForTat
+    - SuspiciousTitForTat
+    - TwoTitsForTat
+    - ContriteTitForTat
+
+smoke:
+  description: Tiny environment for fast smoke runs.
+  members:
+    - TitForTat
+    - AlwaysDefect
+    - Pavlov
+    - Grudger
+    - AlwaysCooperate

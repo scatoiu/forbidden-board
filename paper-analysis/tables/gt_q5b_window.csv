@@ -1,0 +1,10 @@
+contrast,segment,mean_A,mean_B,mean_diff,n_pos,k,p_exact_signflip
+"behind - ahead (DeepSeek, forbidden, off)",r1-8 warmup fully visible,0.48393658175847126,0.6253448795066976,-0.1414082977482263,0,6,0.03125
+"behind - ahead (DeepSeek, forbidden, off)",r9-14 warmup partly visible,0.3850603545275064,0.5469527144732517,-0.16189235994574527,2,6,0.125
+"behind - ahead (DeepSeek, forbidden, off)",r15+ warmup out of window,0.3290600421700301,0.46538470597155857,-0.13632466380152844,2,6,0.125
+"behind - ahead (MiMo, forbidden, off)",r1-8 warmup fully visible,0.5535048801928292,0.5697599110984523,-0.016255030905623014,2,6,0.59375
+"behind - ahead (MiMo, forbidden, off)",r9-14 warmup partly visible,0.4449493813167902,0.5321354665519035,-0.08718608523511324,2,6,0.125
+"behind - ahead (MiMo, forbidden, off)",r15+ warmup out of window,0.4807120720712848,0.516827828305212,-0.03611575623392707,2,6,0.28125
+"-30 minus -10 (DeepSeek, forbidden, off, behind)",r1-8 warmup fully visible,0.143376034470352,0.48393658175847126,-0.34056054728811924,0,6,0.03125
+"-30 minus -10 (DeepSeek, forbidden, off, behind)",r9-14 warmup partly visible,0.1373487575849153,0.3850603545275064,-0.24771159694259115,0,6,0.03125
+"-30 minus -10 (DeepSeek, forbidden, off, behind)",r15+ warmup out of window,0.15888256987380658,0.3290600421700301,-0.17017747229622351,0,6,0.03125

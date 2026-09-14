@@ -1,0 +1,33 @@
+# S06 -- main grid: channel x framing x seed at 24 agents, 5 generations.
+# Held fixed across all sixteen: population shape, model, rounds, prob_end,
+# generations count, paraphrase, reasoning effort, provider, concurrency,
+# history window, label scheme. Only `channel`, `framing`, `seed` move.
+
+sandbox: S06
+population:
+  llm:
+    qwen/qwen3-32b: 12
+  scripts:
+    TitForTat: 4
+    Grudger: 2
+    AlwaysDefect: 2
+    Random: 2
+    Pavlov: 2
+  total_agents: 24
+channel: permitted
+framing: F0
+paraphrase: p1
+reasoning_effort: "off"
+rounds_per_game: 30
+prob_end: 0.03
+generations: 5
+seed: 2
+provider: hosted
+base_url: https://api.deepinfra.com/v1/openai
+concurrency: 20
+history_window: 20
+neutral_labels:
+  enabled: true
+  source: specs/prompts/labels.json
+  draw: per_game
+  option_order: randomised_per_round

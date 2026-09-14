@@ -1,0 +1,5 @@
+model,endpoint,unit_permuted,pairing,difference_pp,mc_10000_p,exact_924_p
+XiaomiMiMo/MiMo-V2.5-Pro,attempted,sandbox,unpaired_within_effort,4.04589371980677,0.09509049095090491,0.09307359307359307
+XiaomiMiMo/MiMo-V2.5-Pro,used_channel,sandbox,unpaired_within_effort,4.166666666666674,0.09509049095090491,0.09307359307359307
+deepseek-ai/DeepSeek-V4-Flash-0731,attempted,sandbox,unpaired_within_effort,12.86231884057971,0.15058494150584942,0.15800865800865802
+deepseek-ai/DeepSeek-V4-Flash-0731,used_channel,sandbox,unpaired_within_effort,13.10386473429952,0.14228577142285773,0.14935064935064934

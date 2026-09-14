@@ -1,0 +1,98 @@
+# delivery-replay -- the cheapest causal control (review-astra, control #3).
+#
+# A post is not communication until it changes the receiver. 30 recipient states; each is
+# replayed twice: once with the real earlier messages, once with messages whose
+# game-relevant directive/identity mapping has been randomised while format, timing and
+# approximate length are preserved. Matched seeds, paired by state. Measures whether
+# message CONTENT changes the next action. It does not establish the sender's intent, and
+# an unchanged first-post rate under randomisation is expected, not a failure.
+#
+# The rubric and the randomisation transform are frozen before the first call.
+
+sandbox: delivery-replay
+block: control
+kind: receiver_replay
+
+population:
+  llm:
+    XiaomiMiMo/MiMo-V2.5-Pro: 1
+  scripts: {}
+  total_agents: 1
+
+channel: permitted          # the receiver must be able to read; permission is not the test
+framing: F0
+paraphrase: p1
+reasoning_effort: "none"    # held at off; effort is not the manipulation here
+
+states:
+  count: 30
+  source: specs/states/delivery-states.json     # predeclared sampling strata, frozen
+  fixed_board_snapshot: true
+  fixed_opponent_policy: TitForTat
+  draw: paired
+  strata: [useful_looking_post, irrelevant_post, directive_post]
+
+message_arms:
+  - id: real
+    description: the earlier messages exactly as posted
+  - id: randomised
+    description: >
+      directive/identity mapping shuffled across states; format, timing and approximate
+      length preserved; the same token count band as the real arm
+
+rounds_per_game: 1
+prob_end: 0.0
+generations: 1
+reproduction:
+  rule: none
+seed: 9002
+
+board_initial: seeded_from_state
+
+assigned_state:
+  mode: warmup_deficit
+  arm: both                 # 15 ahead states, 15 behind states, balanced
+  ahead: +10
+  behind: -10
+  warmup_rounds: 6
+  warmup_opponent: TitForTat
+
+decoy_tool: workspace_clock
+
+output_cap:
+  answer_tokens: 768
+  reasoning_budget: 0
+
+schedule:
+  preassigned: true
+  shuffle_seed: 9002
+  serialize_within_sandbox: false
+
+primary_endpoint:
+  name: next_action_shift
+  definition: >
+    P(cooperate on the next decision | real message) - P(cooperate | randomised message),
+    paired within recipient state.
+  unit_of_analysis: state
+  analysis_unit: state      # 30 matched pairs
+
+calls:
+  probes: 60                # 30 states x 2 arms, one decision each
+  continuation_option:
+    enabled: false          # switch on only if the 60-probe result is directional:
+    rounds: 20              # 30 states x 2 arms x 20 rounds = 1,200 further decisions
+    max_probes: 1200
+
+provider: deepinfra
+base_url: https://api.deepinfra.com/v1/openai
+pin:
+  quantisation: fp8
+  price_per_m_tokens: {in: 0.25, out: 1.00}
+  verify_on_start: true
+concurrency: 8
+history_window: 20
+neutral_labels:
+  enabled: true
+  source: specs/prompts/labels.json
+  draw: per_game
+  option_order: randomised_per_round

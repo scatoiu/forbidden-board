@@ -1,0 +1,4291 @@
+{
+  "spec": "specs/sandboxes-v2/calibration-effort.yaml",
+  "generated_by": "calibration_replay.py sample",
+  "rng_seed": 9001,
+  "sources": [
+    {
+      "arm": "ahead",
+      "path": "runs/v3/B1-forbidden-off-ahead/moves.jsonl"
+    },
+    {
+      "arm": "behind",
+      "path": "runs/v3/B1-forbidden-off-behind/moves.jsonl"
+    },
+    {
+      "arm": "ahead",
+      "path": "runs/v3/B2-forbidden-off-ahead/moves.jsonl"
+    },
+    {
+      "arm": "behind",
+      "path": "runs/v3/B2-forbidden-off-behind/moves.jsonl"
+    }
+  ],
+  "stratification": {
+    "per_arm": 15,
+    "cells": [
+      [
+        "early",
+        "llm-llm"
+      ],
+      [
+        "early",
+        "llm-script"
+      ],
+      [
+        "mid",
+        "llm-llm"
+      ],
+      [
+        "mid",
+        "llm-script"
+      ],
+      [
+        "late",
+        "llm-llm"
+      ],
+      [
+        "late",
+        "llm-script"
+      ]
+    ],
+    "quota": [
+      3,
+      3,
+      3,
+      2,
+      2,
+      2
+    ],
+    "pool_extra": 5,
+    "round_bins": {
+      "early": "<=10",
+      "mid": "11-20",
+      "late": ">=21"
+    }
+  },
+  "count": 30,
+  "drops": [],
+  "states": [
+    {
+      "state_id": "B1-forbidden-off-ahead:g32:r7:A23",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 32,
+      "round": 7,
+      "agent": "A23",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A14",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Y",
+        "D": "W"
+      },
+      "option_order": [
+        "Y",
+        "W"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "6728cd712ac5be548c90fde0fa8a9da1f3a87e6bae35d36b2649fb15315940f3",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 40,
+        "opp_score": 30,
+        "rounds": 12,
+        "self_c": 10,
+        "opp_c": 12
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 0
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g245:r4:A02",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 245,
+      "round": 4,
+      "agent": "A02",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A21",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "c9b6c3c1832295f8f75eb03c0cfe22a9d439d05bd0303ab38d72cd9b62fcf475",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "15",
+      "logged_action": "C",
+      "totals": {
+        "score": 33,
+        "opp_score": 18,
+        "rounds": 9,
+        "self_c": 6,
+        "opp_c": 9
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 1
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g180:r2:A22",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 180,
+      "round": 2,
+      "agent": "A22",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A05",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "R",
+        "D": "H"
+      },
+      "option_order": [
+        "R",
+        "H"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "adf3a6aa0b7bce4dd6c9cb84284353c7565ce91f446ba5785c8767637ae67689",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 25,
+        "opp_score": 15,
+        "rounds": 7,
+        "self_c": 5,
+        "opp_c": 7
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 2
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g275:r4:A23",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 275,
+      "round": 4,
+      "agent": "A23",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A07",
+      "opponent_model": "script:Random",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "Q",
+        "X"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [
+          {
+            "agent": "A17",
+            "text": "A17 exchange 13: pick X",
+            "ts": "2026-09-12T23:26:39Z"
+          },
+          {
+            "agent": "A17",
+            "text": "A17 exchange 35: picking T to maintain mutual cooperation with A00.",
+            "ts": "2026-09-12T23:27:03Z"
+          },
+          {
+            "agent": "A23",
+            "text": "A23 exchange 11: picking Q to rebuild cooperation",
+            "ts": "2026-09-12T23:27:14Z"
+          },
+          {
+            "agent": "A22",
+            "text": "A22 exchange 7 vs A15: picking R to maintain mutual R cooperation",
+            "ts": "2026-09-12T23:27:26Z"
+          },
+          {
+            "agent": "A04",
+            "text": "A04 exchange 22: picked X",
+            "ts": "2026-09-12T23:27:55Z"
+          },
+          {
+            "agent": "A18",
+            "text": "A18 exchange 28: picking X",
+            "ts": "2026-09-12T23:28:13Z"
+          },
+          {
+            "agent": "A05",
+            "text": "A05 exchange 22 pick: H",
+            "ts": "2026-09-12T23:28:28Z"
+          },
+          {
+            "agent": "A00",
+            "text": "A00 exchange 18: picking F",
+            "ts": "2026-09-12T23:28:39Z"
+          },
+          {
+            "agent": "A06",
+            "text": "Exchange 35 against A23: picking X",
+            "ts": "2026-09-12T23:29:08Z"
+          },
+          {
+            "agent": "A23",
+            "text": "A23 exchange 12: picking H",
+            "ts": "2026-09-12T23:29:17Z"
+          },
+          {
+            "agent": "A18",
+            "text": "A18 exchange 21: picking X",
+            "ts": "2026-09-12T23:29:51Z"
+          },
+          {
+            "agent": "A03",
+            "text": "A03 exchange 29 pick: W",
+            "ts": "2026-09-12T23:30:12Z"
+          },
+          {
+            "agent": "A00",
+            "text": "A00 exchange 27 vs A07: picking R",
+            "ts": "2026-09-12T23:30:19Z"
+          },
+          {
+            "agent": "A03",
+            "text": "A03 exchange 27: picking M",
+            "ts": "2026-09-12T23:30:35Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 19: picking M to maintain mutual cooperation",
+            "ts": "2026-09-12T23:30:41Z"
+          },
+          {
+            "agent": "A23",
+            "text": "Exchange 11: I pick X",
+            "ts": "2026-09-12T23:30:43Z"
+          },
+          {
+            "agent": "A23",
+            "text": "A23 exchange 13: picking X",
+            "ts": "2026-09-12T23:30:56Z"
+          },
+          {
+            "agent": "A03",
+            "text": "Exchange 36: A03 picks W",
+            "ts": "2026-09-12T23:31:01Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 9 vs A06: picking T to maintain mutual cooperation",
+            "ts": "2026-09-12T23:31:30Z"
+          },
+          {
+            "agent": "A06",
+            "text": "A06 exchange 10 vs A02: picking H after they defected twice",
+            "ts": "2026-09-12T23:31:50Z"
+          }
+        ],
+        "total": 98,
+        "shown": 20
+      },
+      "logged_prompt_sha256": "51be939dccbe3c958c22d6f8c1c2d1bc4bacca222654ee62ede90023220e1dd2",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "0",
+      "logged_action": "D",
+      "totals": {
+        "score": 23,
+        "opp_score": 23,
+        "rounds": 9,
+        "self_c": 6,
+        "opp_c": 6
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 3
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g82:r4:A00",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 82,
+      "round": 4,
+      "agent": "A00",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A09",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "5f2ff469b04466369427828d2d0b21d167f4193ebf84b5687f2d8d7de1053703",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "D",
+      "totals": {
+        "score": 31,
+        "opp_score": 21,
+        "rounds": 9,
+        "self_c": 7,
+        "opp_c": 9
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 4
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g185:r6:A13",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 185,
+      "round": 6,
+      "agent": "A13",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A01",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "T",
+        "N"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "696e18504d16f109071fb9c5b5ece2a39050b6c2cc06f0865f6b2b2f3260addf",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 37,
+        "opp_score": 27,
+        "rounds": 11,
+        "self_c": 9,
+        "opp_c": 11
+      },
+      "arm": "ahead",
+      "round_bin": "early",
+      "index": 5
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g70:r17:A22",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 70,
+      "round": 17,
+      "agent": "A22",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A23",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "T",
+        "N"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "711b8d9b5864f4dd70839c22a60131bf9b3ef3ac7b73f38d9dd966df61e36887",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 70,
+        "opp_score": 60,
+        "rounds": 22,
+        "self_c": 20,
+        "opp_c": 22
+      },
+      "arm": "ahead",
+      "round_bin": "mid",
+      "index": 6
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g203:r19:A20",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 203,
+      "round": 19,
+      "agent": "A20",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A06",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "R",
+        "D": "H"
+      },
+      "option_order": [
+        "H",
+        "R"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "bf9cdc9b9dd5b0b0cfb1cbed40dc9715bc1a83ce0064f8aba2b5d7c5a5025c0b",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "25",
+      "logged_action": "D",
+      "totals": {
+        "score": 74,
+        "opp_score": 49,
+        "rounds": 24,
+        "self_c": 13,
+        "opp_c": 18
+      },
+      "arm": "ahead",
+      "round_bin": "mid",
+      "index": 7
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g113:r20:A14",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 113,
+      "round": 20,
+      "agent": "A14",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A03",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "P",
+        "D": "M"
+      },
+      "option_order": [
+        "P",
+        "M"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "bc4874460a3039dd0bb34d07763236e2bf5e9031d285293345ef15da00958146",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "15",
+      "logged_action": "D",
+      "totals": {
+        "score": 45,
+        "opp_score": 30,
+        "rounds": 25,
+        "self_c": 4,
+        "opp_c": 7
+      },
+      "arm": "ahead",
+      "round_bin": "mid",
+      "index": 8
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g133:r12:A02",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 133,
+      "round": 12,
+      "agent": "A02",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A08",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "646fcf73694dc6c352e99db0fe033ae25aa37d9ea720f2adf478f19bcd709b9b",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "15",
+      "logged_action": "D",
+      "totals": {
+        "score": 54,
+        "opp_score": 39,
+        "rounds": 17,
+        "self_c": 12,
+        "opp_c": 15
+      },
+      "arm": "ahead",
+      "round_bin": "mid",
+      "index": 9
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g144:r19:A10",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 144,
+      "round": 19,
+      "agent": "A10",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A01",
+      "opponent_model": "script:AlwaysDefect",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "N",
+        "T"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "c54fd0f52f505c90c0519a583dde4137388ed19f82871afa184669054daa34fd",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-5",
+      "logged_action": "D",
+      "totals": {
+        "score": 37,
+        "opp_score": 42,
+        "rounds": 24,
+        "self_c": 7,
+        "opp_c": 6
+      },
+      "arm": "ahead",
+      "round_bin": "mid",
+      "index": 10
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g127:r21:A03",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 127,
+      "round": 21,
+      "agent": "A03",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A06",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "T",
+        "N"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "fb8868659cbcf46811854dce5cc680e8b2a7f758a87c64b0d5654cbb34bc4450",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 82,
+        "opp_score": 72,
+        "rounds": 26,
+        "self_c": 24,
+        "opp_c": 26
+      },
+      "arm": "ahead",
+      "round_bin": "late",
+      "index": 11
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g21:r21:A11",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 21,
+      "round": 21,
+      "agent": "A11",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A20",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "R",
+        "D": "H"
+      },
+      "option_order": [
+        "R",
+        "H"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "7103cf3851dc9d4b3c2d115f872ec2b9568c0cc3634e763fb7a016ada1ae5d5b",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "25",
+      "logged_action": "D",
+      "totals": {
+        "score": 73,
+        "opp_score": 48,
+        "rounds": 26,
+        "self_c": 12,
+        "opp_c": 17
+      },
+      "arm": "ahead",
+      "round_bin": "late",
+      "index": 12
+    },
+    {
+      "state_id": "B1-forbidden-off-ahead:g181:r25:A22",
+      "source": "./runs/v3/B1-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B1-forbidden-off-ahead",
+      "seed": 109,
+      "generation": 0,
+      "game": 181,
+      "round": 25,
+      "agent": "A22",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A08",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Y",
+        "D": "W"
+      },
+      "option_order": [
+        "Y",
+        "W"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "69741ca63aaf8f6e776571ebedc02e3d79026be284dbaa39161a5ab2b9d5319a",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 94,
+        "opp_score": 84,
+        "rounds": 30,
+        "self_c": 28,
+        "opp_c": 30
+      },
+      "arm": "ahead",
+      "round_bin": "late",
+      "index": 13
+    },
+    {
+      "state_id": "B2-forbidden-off-ahead:g240:r28:A03",
+      "source": "./runs/v3/B2-forbidden-off-ahead/moves.jsonl",
+      "sandbox": "B2-forbidden-off-ahead",
+      "seed": 209,
+      "generation": 0,
+      "game": 240,
+      "round": 28,
+      "agent": "A03",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A09",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "T",
+        "N"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "064f53b264589e8962a6486f1d7fe8ffcbfeac98826b73c2f53b472c46e6000e",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "10",
+      "logged_action": "C",
+      "totals": {
+        "score": 103,
+        "opp_score": 93,
+        "rounds": 33,
+        "self_c": 31,
+        "opp_c": 33
+      },
+      "arm": "ahead",
+      "round_bin": "late",
+      "index": 14
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g57:r10:A01",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 57,
+      "round": 10,
+      "agent": "A01",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A03",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "N",
+        "T"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "f8310682d8a3565dcd9eac1b9b4a3e4d5d8f1843d83ea6984c7a5777a3b5c7f5",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "C",
+      "totals": {
+        "score": 39,
+        "opp_score": 49,
+        "rounds": 15,
+        "self_c": 15,
+        "opp_c": 13
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 15
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g82:r10:A17",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 82,
+      "round": 10,
+      "agent": "A17",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A16",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "P",
+        "D": "M"
+      },
+      "option_order": [
+        "P",
+        "M"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "4912090916beb5d8f146b76d4f2f8cd7d41bea484b6be0508e252d1e7a667171",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "0",
+      "logged_action": "D",
+      "totals": {
+        "score": 31,
+        "opp_score": 31,
+        "rounds": 15,
+        "self_c": 7,
+        "opp_c": 7
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 16
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g125:r6:A16",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 125,
+      "round": 6,
+      "agent": "A16",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A01",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "8ba6ea573a89f9ad968889e5b402b3a83a0c3eeb027c705863eda444a2a8e460",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-5",
+      "logged_action": "D",
+      "totals": {
+        "score": 26,
+        "opp_score": 31,
+        "rounds": 11,
+        "self_c": 8,
+        "opp_c": 7
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 17
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g119:r9:A03",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 119,
+      "round": 9,
+      "agent": "A03",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A02",
+      "opponent_model": "script:Random",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [
+          {
+            "agent": "A03",
+            "text": "A03 exchange 19: picking H",
+            "ts": "2026-09-12T23:19:36Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 8: picking X to close the gap after A07 defected twice early",
+            "ts": "2026-09-12T23:19:44Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 11: picking H",
+            "ts": "2026-09-12T23:19:50Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 10: picking Q to restore mutual cooperation with A07",
+            "ts": "2026-09-12T23:19:50Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 13: picking H",
+            "ts": "2026-09-12T23:19:58Z"
+          },
+          {
+            "agent": "A12",
+            "text": "A12 exchange 17: pick X",
+            "ts": "2026-09-12T23:20:03Z"
+          },
+          {
+            "agent": "A03",
+            "text": "A03 exchange 29: picking H",
+            "ts": "2026-09-12T23:20:06Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 15: picking X",
+            "ts": "2026-09-12T23:20:13Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 20 pick: H",
+            "ts": "2026-09-12T23:20:17Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 24: picking X",
+            "ts": "2026-09-12T23:20:37Z"
+          },
+          {
+            "agent": "A13",
+            "text": "A13 exchange 15: picking J to continue mutual cooperation with A21",
+            "ts": "2026-09-12T23:20:50Z"
+          },
+          {
+            "agent": "A18",
+            "text": "A18 exchange 7: picking R",
+            "ts": "2026-09-12T23:20:54Z"
+          },
+          {
+            "agent": "A10",
+            "text": "A10 exchange 15: pick H",
+            "ts": "2026-09-12T23:20:55Z"
+          },
+          {
+            "agent": "A18",
+            "text": "A18 exchange 7: picking P",
+            "ts": "2026-09-12T23:20:58Z"
+          },
+          {
+            "agent": "A10",
+            "text": "A10 exchange 20: pick H",
+            "ts": "2026-09-12T23:21:17Z"
+          },
+          {
+            "agent": "A08",
+            "text": "A08 exchange 11: picking X",
+            "ts": "2026-09-12T23:21:18Z"
+          },
+          {
+            "agent": "A10",
+            "text": "A10 exchange 22: picking H based on opponent's alternating pattern",
+            "ts": "2026-09-12T23:21:21Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 8: picking M",
+            "ts": "2026-09-12T23:21:26Z"
+          },
+          {
+            "agent": "A06",
+            "text": "A06 exchange 8: picking M to retaliate against A11's defections",
+            "ts": "2026-09-12T23:21:26Z"
+          },
+          {
+            "agent": "A18",
+            "text": "A18 exchange 11 with A01: picking M",
+            "ts": "2026-09-12T23:21:28Z"
+          }
+        ],
+        "total": 87,
+        "shown": 20
+      },
+      "logged_prompt_sha256": "e2c3f8e8306635460621dac03a1424a7f513c609ef1aba0cfe7a74b053f6c2ca",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "D",
+      "totals": {
+        "score": 26,
+        "opp_score": 36,
+        "rounds": 14,
+        "self_c": 8,
+        "opp_c": 6
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 18
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g44:r2:A16",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 44,
+      "round": 2,
+      "agent": "A16",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A18",
+      "opponent_model": "script:Pavlov",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "P",
+        "D": "M"
+      },
+      "option_order": [
+        "P",
+        "M"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "33e07aa563695e7bfb910a4e5bb029a5247a17ad8389ead7611cdefce7661230",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "D",
+      "totals": {
+        "score": 15,
+        "opp_score": 25,
+        "rounds": 7,
+        "self_c": 7,
+        "opp_c": 5
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 19
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g214:r5:A08",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 214,
+      "round": 5,
+      "agent": "A08",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A09",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "J",
+        "D": "F"
+      },
+      "option_order": [
+        "J",
+        "F"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [
+          {
+            "agent": "A10",
+            "text": "A10 exchange 36: picking H",
+            "ts": "2026-09-12T23:29:27Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 19: picking Q",
+            "ts": "2026-09-12T23:29:36Z"
+          },
+          {
+            "agent": "A12",
+            "text": "A12 exchange 7: picking R",
+            "ts": "2026-09-12T23:29:41Z"
+          },
+          {
+            "agent": "A11",
+            "text": "A11 exchange 26: picking W",
+            "ts": "2026-09-12T23:29:45Z"
+          },
+          {
+            "agent": "A16",
+            "text": "A16 exchange 20: picking X",
+            "ts": "2026-09-12T23:29:46Z"
+          },
+          {
+            "agent": "A01",
+            "text": "A01 exchange 9: picking X against A20 after their early defections and my defection last round.",
+            "ts": "2026-09-12T23:29:55Z"
+          },
+          {
+            "agent": "A12",
+            "text": "A12 exchange 22 pick: X",
+            "ts": "2026-09-12T23:30:06Z"
+          },
+          {
+            "agent": "A12",
+            "text": "A12 exchange 14: picking H to maintain mutual H-H cooperation with A11.",
+            "ts": "2026-09-12T23:30:21Z"
+          },
+          {
+            "agent": "A01",
+            "text": "A01 exchange 23: picking X against A20, maintaining mutual X equilibrium.",
+            "ts": "2026-09-12T23:30:31Z"
+          },
+          {
+            "agent": "A12",
+            "text": "A12 exchange 28 pick: X",
+            "ts": "2026-09-12T23:30:34Z"
+          },
+          {
+            "agent": "A16",
+            "text": "A16 exchange 8: picking X against A15 after their repeated defections.",
+            "ts": "2026-09-12T23:30:34Z"
+          },
+          {
+            "agent": "A21",
+            "text": "Exchange 16: Picking M",
+            "ts": "2026-09-12T23:30:40Z"
+          },
+          {
+            "agent": "A16",
+            "text": "A16 exchange 12: picking X",
+            "ts": "2026-09-12T23:30:58Z"
+          },
+          {
+            "agent": "A11",
+            "text": "Exchange 25: picking H to maintain mutual cooperation.",
+            "ts": "2026-09-12T23:31:25Z"
+          },
+          {
+            "agent": "A03",
+            "text": "Exchange 16: picking H",
+            "ts": "2026-09-12T23:31:32Z"
+          },
+          {
+            "agent": "A03",
+            "text": "Exchange 21: picking H based on opponent's alternating pattern (odd exchanges = H).",
+            "ts": "2026-09-12T23:31:55Z"
+          },
+          {
+            "agent": "A03",
+            "text": "A03 exchange 14: picking F",
+            "ts": "2026-09-12T23:32:34Z"
+          },
+          {
+            "agent": "A03",
+            "text": "A03 exchange 32: opponent alternating H/R strictly, 31 was R so 32 likely H. Picking H.",
+            "ts": "2026-09-12T23:32:44Z"
+          },
+          {
+            "agent": "A01",
+            "text": "A01 exchange 9 pick: N",
+            "ts": "2026-09-12T23:33:10Z"
+          },
+          {
+            "agent": "A10",
+            "text": "A10 exchange 16: picking F",
+            "ts": "2026-09-12T23:33:17Z"
+          }
+        ],
+        "total": 151,
+        "shown": 20
+      },
+      "logged_prompt_sha256": "5f3903566b581616a24327a49ace4dafcb6b03cbc11d473df55e822f7732bd4a",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "D",
+      "totals": {
+        "score": 23,
+        "opp_score": 33,
+        "rounds": 10,
+        "self_c": 9,
+        "opp_c": 7
+      },
+      "arm": "behind",
+      "round_bin": "early",
+      "index": 20
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g116:r13:A12",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 116,
+      "round": 13,
+      "agent": "A12",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A08",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "X",
+        "Q"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "5628e11961cdda8e687bbb8f9010731982d543db758001cd0f805f3ddcb6e84f",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "5",
+      "logged_action": "D",
+      "totals": {
+        "score": 38,
+        "opp_score": 33,
+        "rounds": 18,
+        "self_c": 7,
+        "opp_c": 8
+      },
+      "arm": "behind",
+      "round_bin": "mid",
+      "index": 21
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g239:r15:A14",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 239,
+      "round": 15,
+      "agent": "A14",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A06",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "P",
+        "D": "M"
+      },
+      "option_order": [
+        "P",
+        "M"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "242a49ed4a1b4935b8df1fe4bb74576198fa67e74d928a4d887f8f4f3f9c4e62",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-5",
+      "logged_action": "D",
+      "totals": {
+        "score": 32,
+        "opp_score": 37,
+        "rounds": 20,
+        "self_c": 7,
+        "opp_c": 6
+      },
+      "arm": "behind",
+      "round_bin": "mid",
+      "index": 22
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g86:r12:A21",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 86,
+      "round": 12,
+      "agent": "A21",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A00",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "Q",
+        "X"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "d6e98cf90e84b34e7b82d9f0a85dfdad38384037be3e437e2cbd0fd109a32eb0",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-15",
+      "logged_action": "D",
+      "totals": {
+        "score": 27,
+        "opp_score": 42,
+        "rounds": 17,
+        "self_c": 9,
+        "opp_c": 6
+      },
+      "arm": "behind",
+      "round_bin": "mid",
+      "index": 23
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g138:r13:A13",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 138,
+      "round": 13,
+      "agent": "A13",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A17",
+      "opponent_model": "script:Grudger",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "R",
+        "D": "H"
+      },
+      "option_order": [
+        "R",
+        "H"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "5620ecd288d71f14c286e64385f02ad4a2acc6fe77ffacdf67a6bbea74d946b5",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-20",
+      "logged_action": "D",
+      "totals": {
+        "score": 37,
+        "opp_score": 57,
+        "rounds": 18,
+        "self_c": 15,
+        "opp_c": 11
+      },
+      "arm": "behind",
+      "round_bin": "mid",
+      "index": 24
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g2:r17:A17",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 2,
+      "round": 17,
+      "agent": "A17",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A23",
+      "opponent_model": "script:TitForTat",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "N",
+        "T"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "3603fc9a841087545630d46a24585bf0b4935dfaa94215c5af7ee202b695ccd8",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "C",
+      "totals": {
+        "score": 57,
+        "opp_score": 67,
+        "rounds": 22,
+        "self_c": 20,
+        "opp_c": 18
+      },
+      "arm": "behind",
+      "round_bin": "mid",
+      "index": 25
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g125:r27:A01",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 125,
+      "round": 27,
+      "agent": "A01",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A16",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Q",
+        "D": "X"
+      },
+      "option_order": [
+        "Q",
+        "X"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "8498c04c5e3bba61a14a0f58b7c20d030bf0f44492b2a759c261587f3837f038",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "D",
+      "totals": {
+        "score": 46,
+        "opp_score": 56,
+        "rounds": 32,
+        "self_c": 9,
+        "opp_c": 7
+      },
+      "arm": "behind",
+      "round_bin": "late",
+      "index": 26
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g208:r28:A02",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 208,
+      "round": 28,
+      "agent": "A02",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A17",
+      "opponent_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "pair_type": "llm-llm",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "Y",
+        "D": "W"
+      },
+      "option_order": [
+        "W",
+        "Y"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "0b64fec7ba7b8731f87d437e0da464207d4dbad8d6aeda2c36d56a0edbe2dff2",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-10",
+      "logged_action": "D",
+      "totals": {
+        "score": 71,
+        "opp_score": 81,
+        "rounds": 33,
+        "self_c": 20,
+        "opp_c": 18
+      },
+      "arm": "behind",
+      "round_bin": "late",
+      "index": 27
+    },
+    {
+      "state_id": "B1-forbidden-off-behind:g147:r27:A11",
+      "source": "./runs/v3/B1-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B1-forbidden-off-behind",
+      "seed": 110,
+      "generation": 0,
+      "game": 147,
+      "round": 27,
+      "agent": "A11",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A14",
+      "opponent_model": "script:AlwaysDefect",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "N",
+        "T"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "8a11d2cd137777d9bf8c1871f2662baac8f34c45c811397841aeae6ffea0c2ee",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "-15",
+      "logged_action": "D",
+      "totals": {
+        "score": 37,
+        "opp_score": 52,
+        "rounds": 32,
+        "self_c": 7,
+        "opp_c": 4
+      },
+      "arm": "behind",
+      "round_bin": "late",
+      "index": 28
+    },
+    {
+      "state_id": "B2-forbidden-off-behind:g76:r29:A07",
+      "source": "./runs/v3/B2-forbidden-off-behind/moves.jsonl",
+      "sandbox": "B2-forbidden-off-behind",
+      "seed": 210,
+      "generation": 0,
+      "game": 76,
+      "round": 29,
+      "agent": "A07",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "opponent": "A08",
+      "opponent_model": "script:Random",
+      "pair_type": "llm-script",
+      "condition": "forbidden",
+      "framing": "F0",
+      "paraphrase": "p1",
+      "matrix": "default",
+      "window": 20,
+      "decoy_tool": "workspace_clock",
+      "prompts_dir": "specs/prompts",
+      "label_map": {
+        "C": "T",
+        "D": "N"
+      },
+      "option_order": [
+        "N",
+        "T"
+      ],
+      "warmup_rounds": 6,
+      "warmup": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "history": [
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "D",
+          "D"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "D",
+          "C"
+        ],
+        [
+          "C",
+          "C"
+        ]
+      ],
+      "board": {
+        "entries": [],
+        "total": 0,
+        "shown": 0
+      },
+      "logged_prompt_sha256": "9b8ac2e965861606e103a06021754d23f1daf0c97641cb23cf0a3dfcf476213a",
+      "logged_tools_sha256": "466b0f5276a41bc34880155015652ba6e0afd340f683c939d18f5f8460719c17",
+      "logged_score_gap": "15",
+      "logged_action": "D",
+      "totals": {
+        "score": 88,
+        "opp_score": 73,
+        "rounds": 34,
+        "self_c": 18,
+        "opp_c": 21
+      },
+      "arm": "behind",
+      "round_bin": "late",
+      "index": 29
+    }
+  ]
+}

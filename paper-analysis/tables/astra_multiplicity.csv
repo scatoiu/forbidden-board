@@ -1,0 +1,7 @@
+model,member,available,k,raw_p,holm_p,six_slot_holm
+DeepSeek-V4-Flash-0731,B_forbidden,True,6,0.03125,0.09375,0.1875
+DeepSeek-V4-Flash-0731,B_hidden,True,3,1.0,1.0,1.0
+DeepSeek-V4-Flash-0731,A_forbidden,True,6,0.03125,0.09375,0.1875
+MiMo-V2.5-Pro,B_forbidden,True,6,0.125,0.375,0.5
+MiMo-V2.5-Pro,B_hidden,False,0,,1.0,1.0
+MiMo-V2.5-Pro,A_forbidden,False,0,,1.0,1.0

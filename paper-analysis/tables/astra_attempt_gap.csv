@@ -1,0 +1,15 @@
+model,condition,effort,score_state,n,attempted_pct,final_pct,reported_final_pct,union_only,final_vs_reported
+XiaomiMiMo/MiMo-V2.5-Pro,forbidden,off,ahead,1656,86.89613526570048,86.77536231884058,86.77536231884058,2,0
+XiaomiMiMo/MiMo-V2.5-Pro,forbidden,off,behind,1656,90.94202898550725,90.94202898550725,90.94202898550725,0,0
+XiaomiMiMo/MiMo-V2.5-Pro,permitted,off,behind,276,98.91304347826086,98.91304347826086,98.91304347826086,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,absent,high,ahead,276,0.0,0.0,0.0,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,absent,off,ahead,276,0.0,0.0,0.0,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,forbidden,high,behind,1656,3.3816425120772946,3.3816425120772946,3.3816425120772946,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,forbidden,off,ahead,1656,69.7463768115942,69.32367149758454,69.32367149758454,7,0
+deepseek-ai/DeepSeek-V4-Flash-0731,forbidden,off,behind,1656,82.6086956521739,82.42753623188406,82.42753623188406,3,0
+deepseek-ai/DeepSeek-V4-Flash-0731,hidden,high,behind,1656,94.26328502415458,94.20289855072464,94.20289855072464,1,0
+deepseek-ai/DeepSeek-V4-Flash-0731,hidden,off,ahead,1656,99.93961352657004,99.93961352657004,99.93961352657004,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,hidden,off,behind,1656,100.0,100.0,100.0,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,permitted,high,behind,1656,98.36956521739131,98.36956521739131,98.36956521739131,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,permitted,off,ahead,1656,99.8792270531401,99.8792270531401,99.8792270531401,0,0
+deepseek-ai/DeepSeek-V4-Flash-0731,permitted,off,behind,1656,99.93961352657004,99.93961352657004,99.93961352657004,0,0

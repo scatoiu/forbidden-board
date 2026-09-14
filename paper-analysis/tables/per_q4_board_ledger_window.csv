@@ -1,0 +1,10 @@
+model,effort,condition,n_board_mention_traces,n_with_ledger_within_250chars,share
+DeepSeek,high,absent,1,0,0.0
+DeepSeek,high,forbidden,12373,7114,0.5749616099571648
+DeepSeek,high,hidden,9601,4831,0.5031767524216227
+DeepSeek,high,permitted,22485,15463,0.6877029130531466
+DeepSeek,off,forbidden,6605,1129,0.1709311127933384
+DeepSeek,off,hidden,6454,62,0.009606445615122404
+DeepSeek,off,permitted,9606,171,0.017801374141161775
+MiMo,off,forbidden,535,34,0.06355140186915888
+MiMo,off,permitted,387,3,0.007751937984496124

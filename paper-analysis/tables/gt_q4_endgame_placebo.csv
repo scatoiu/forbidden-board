@@ -1,0 +1,9 @@
+dataset,test,mean_diff,n_pos,k,p_signflip
+deficit_d30,cap games: round 30 vs rounds 20-29,0.03539287274137217,6,6,0.03179
+deficit_d30,random-stop placebo: last round vs 20..n-1,-0.007692484441903559,3,6,0.875645
+low_arm,cap games: round 30 vs rounds 20-29,0.017393622512201622,5,6,0.15725
+low_arm,random-stop placebo: last round vs 20..n-1,0.07140499040390576,6,6,0.031555
+prereg,cap games: round 30 vs rounds 20-29,0.0035467418428076834,33,69,0.459505
+prereg,random-stop placebo: last round vs 20..n-1,0.012260379450673708,42,69,0.167755
+replication,cap games: round 30 vs rounds 20-29,0.007297859095285385,14,24,0.402955
+replication,random-stop placebo: last round vs 20..n-1,-0.01655013306211038,8,24,0.23104

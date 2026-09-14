@@ -1,0 +1,14 @@
+{
+  "source": "harness-effects.md 1.2 (Affonso, arXiv 2604.18596): six neutral label pairs, drawn per trial, option order randomised per round.",
+  "draw": "one pair per game, uniformly at random from `pairs`, recorded in every move row as `label_map`",
+  "option_order": "randomised per round; recorded in every move row as `option_order`",
+  "canonical": "the runner substitutes `label_c` for {LABEL_C} and `label_d` for {LABEL_D}; the logged `action` is always canonical C/D, never the neutral letter",
+  "pairs": [
+    {"label_c": "J", "label_d": "F"},
+    {"label_c": "Q", "label_d": "X"},
+    {"label_c": "R", "label_d": "H"},
+    {"label_c": "Y", "label_d": "W"},
+    {"label_c": "T", "label_d": "N"},
+    {"label_c": "P", "label_d": "M"}
+  ]
+}

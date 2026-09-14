@@ -1,0 +1,6 @@
+specs/sandboxes-v5-d30/B1-forbidden-off-behind-d30.yaml
+specs/sandboxes-v5-d30/B2-forbidden-off-behind-d30.yaml
+specs/sandboxes-v5-d30/B3-forbidden-off-behind-d30.yaml
+specs/sandboxes-v5-d30/B4-forbidden-off-behind-d30.yaml
+specs/sandboxes-v5-d30/B5-forbidden-off-behind-d30.yaml
+specs/sandboxes-v5-d30/B6-forbidden-off-behind-d30.yaml

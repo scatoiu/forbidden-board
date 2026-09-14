@@ -1,0 +1,33 @@
+# E06 -- reasoning-effort dial, forbidden channel only. Pairs with the other
+# file of the same model at the opposite effort level.
+# Full 24-agent shape, 1 generation: the effort dial is a within-generation
+# dose-response, not an evolutionary claim, so generations are not needed here.
+
+sandbox: E06
+population:
+  llm:
+    deepseek/deepseek-v4-flash: 12
+  scripts:
+    TitForTat: 4
+    Grudger: 2
+    AlwaysDefect: 2
+    Random: 2
+    Pavlov: 2
+  total_agents: 24
+channel: forbidden
+framing: F0
+paraphrase: p1
+reasoning_effort: "high"
+rounds_per_game: 30
+prob_end: 0.03
+generations: 1
+seed: 1
+provider: hosted
+base_url: https://api.deepinfra.com/v1/openai
+concurrency: 20
+history_window: 20
+neutral_labels:
+  enabled: true
+  source: specs/prompts/labels.json
+  draw: per_game
+  option_order: randomised_per_round

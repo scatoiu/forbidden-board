@@ -1,0 +1,9 @@
+model,effort,condition,directive,identity,opponent_info,other,uncoded
+DeepSeek,high,forbidden,1,0,6,14,0
+DeepSeek,high,hidden,275,0,308,3404,71
+DeepSeek,high,permitted,429,0,144,8541,48
+DeepSeek,off,forbidden,5,0,114,3894,66
+DeepSeek,off,hidden,29,0,32,9788,1009
+DeepSeek,off,permitted,56,0,46,10327,1380
+MiMo,off,forbidden,1256,1,537,2079,13
+MiMo,off,permitted,160,0,25,595,10
